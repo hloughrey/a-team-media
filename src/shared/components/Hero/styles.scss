@@ -1,0 +1,136 @@
+@import '../../styles/_index';
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $color-secondary-background;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.image {
+    padding-bottom: 15em;
+    align-self: center;
+}
+
+.scroll {
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+
+    p {
+        color: rgba(255,255,255,0.6);
+        color: $color-dark-red;
+        letter-spacing: .2em;
+        font-size: 50px;
+        padding-bottom: 2em;
+    }
+
+    svg {
+        color: $color-dark-red;
+        margin-top: 2em;
+        animation: bounce 1s infinite alternate;
+        -webkit-animation: bounce 1s infinite alternate;
+    }
+    
+    @keyframes bounce {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-15px);
+      }
+    }
+    @-webkit-keyframes bounce {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-15px);
+      }
+    }
+}
+
+@media only screen and (min-width: $screen-sm-min) {
+
+	.scroll {
+	
+		p {
+			font-size: 30px;
+		}
+	}
+
+	@keyframes bounce {
+		from {
+				transform: translateY(0px) scale(2);
+		}
+		to {
+				transform: translateY(-15px) scale(2);
+		}
+	}
+	@-webkit-keyframes bounce {
+		from {
+				transform: translateY(0px) scale(2);
+		}
+		to {
+				transform: translateY(-15px) scale(2);
+		}
+	}
+
+	@media only screen and (orientation:landscape) {
+
+		.scroll {
+			
+			p {
+				font-size: 16px;
+				padding-bottom: .5em;
+			}
+		}
+
+		@keyframes bounce {
+			from {
+				  transform: translateY(0px) scale(1);
+			}
+			to {
+				 transform: translateY(-15px) scale(1);
+			}
+		}
+		@-webkit-keyframes bounce {
+			from {
+				  transform: translateY(0px) scale(1);
+			}
+			to {
+				  transform: translateY(-15px) scale(1);
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-width: $screen-lg-min) {
+ 
+    .scroll {
+    
+        p {
+            font-size: 20px;
+        }
+    
+        @keyframes bounce {
+            from {
+              transform: translateY(0px) scale(1.5);
+            }
+            to {
+              transform: translateY(-15px) scale(1.5);
+            }
+          }
+          @-webkit-keyframes bounce {
+            from {
+              transform: translateY(0px) scale(1.5);
+            }
+            to {
+              transform: translateY(-15px) scale(1.5);
+            }
+          }
+    }
+}

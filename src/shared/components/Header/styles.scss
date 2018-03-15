@@ -1,0 +1,50 @@
+@import '../../styles/_index';
+
+.mainLogo {
+    width: auto;
+    height: 100px;
+}
+
+.noMarginTop {
+    margin-top: 0;
+}
+
+.navbarCustom {
+    border: 0px;
+    background-color: #fff;
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navItemsMobile {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        padding: 1em;
+    }
+}
+
+.headerItems {
+    text-align: center;
+}
+
+.headerItem {
+    color: $color-main-text;
+    font-size: 24px;
+    font-weight: 600;
+    
+    &:hover, &:active, &:focus {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: $screen-lg-min) {
+
+    .headerItem {
+        font-size: 14px;
+    }
+}

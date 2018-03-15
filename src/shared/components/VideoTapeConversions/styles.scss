@@ -1,0 +1,93 @@
+@import '../../styles/_index';
+
+.section {
+	@include section;
+	background-color: $color-secondary-background;
+
+	.heading {
+		color: $color-dark-red;
+	}
+}
+
+.toDigitalWrapper {
+	
+	.toDigitalIntro {
+		margin: 15px 0;
+	}
+
+	.heading,
+	.subHeading {
+		color: $color-dark-red;
+		text-align: center;
+		padding: 1em;
+	}
+
+	.transform {
+		text-transform: uppercase;
+	}
+
+	.subHeading {
+		font-weight: 600;
+		display: block;
+	}
+}
+
+.packageListings {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+
+	h2 {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 15px 0;
+		border: 1px solid $color-light-pink;
+		background: $color-medium-pink;
+	}
+
+	.packageInfo {
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin-bottom: 0;
+			margin-top: 0;
+
+
+			li {
+				font-size: 16px;
+				padding: 10px;
+				border: 1px solid $color-light-pink;
+
+				&:nth-child(even) {
+					background: $color-medium-pink;
+				}
+				&:nth-child(odd) {
+					background: $color-off-white;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				.packagePrice {
+					font-weight: 400;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+.featureListing {
+
+	h2 {
+		border: 1px solid #E57373;
+		background: #EF9A9A;
+	}
+}
+
+.vhsToDigitalDescription {
+	margin-top: 2em;
+}

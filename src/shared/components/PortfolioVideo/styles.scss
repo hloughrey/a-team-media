@@ -1,0 +1,32 @@
+@import '../../styles/_index';
+
+.cardWrapper {
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	.videoWrapper {
+		position: relative;
+		padding-top: 56.25%;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.contentWrapper {
+		box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
+		background-color: $color-white;
+		padding-left: 0;
+		padding-right: 0;
+
+		.title {
+			text-align: center;
+			margin-top: 0;
+			padding: 15px;
+		}
+	}
+}

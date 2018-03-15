@@ -1,0 +1,27 @@
+@import '../../styles/_index';
+
+.fullWidth {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+        font-size: 120px;
+        margin-bottom: 0;
+    }
+    
+    .subTitle {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .submitButton {
+        background-color: $color-dark-red !important;
+        border-color: $color-dark-red !important;
+    }
+}

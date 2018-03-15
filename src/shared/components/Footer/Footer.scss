@@ -1,0 +1,74 @@
+@import '../../styles/_index';
+
+footer {
+    position: relative;
+    color: $color-dark-red;
+
+    .contactDetails {
+        padding-left: 0;
+        display: flex;
+        justify-content: flex-start;
+
+        ul {
+            padding-left: 0;
+            list-style-type: none;
+            line-height: 25px;
+            font-size: 14px;
+
+            li {
+                margin: 15px;
+                display: flex;
+                align-items: flex-start;
+
+                .icon {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 25px;
+                    height: 25px;
+                }
+
+                .details {
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-left: 20px;
+
+                    .company {
+                    font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .footerSocialMedia {
+        display: flex;
+        justify-content: flex-end;
+
+        .socialMediaList {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                margin: 5px;
+
+                a {
+                    color: $color-dark-red;
+
+                    &:hover {
+                        color: $color-medium-grey;
+                        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        color: $color-dark-red;
+        margin-bottom: 0;
+    }
+}

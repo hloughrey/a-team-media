@@ -1,0 +1,46 @@
+@import '../../styles/index';
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #f9f5f9 !important;
+
+    p {
+        color: $color-main-text;
+    }
+
+}
+
+.mainContainer {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    .mainRow {
+        margin-right: 0;
+        margin-left: 0; 
+    }
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.footerWrapper {
+    padding: 15px;
+    position: relative;
+    background-color: $color-secondary-background;
+    width: 100%;
+}
+
+@media only screen and (min-width: $screen-md-min) {
+    .mainContainer {
+        position: initial;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+}

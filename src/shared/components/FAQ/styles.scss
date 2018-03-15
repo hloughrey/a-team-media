@@ -1,0 +1,6 @@
+@import '../../styles/_index';
+
+.section {
+	@include section;
+	background-color: $color-secondary-background;
+}

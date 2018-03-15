@@ -1,0 +1,37 @@
+$color-white: #fff;
+$color-off-white: #fbfbfb;
+$color-light-pink: #FFCDD2;
+$color-medium-pink: #FFEBEE;
+$color-light-red: #e57373;
+$color-dark-red: #D32F2F;
+$color-medium-grey: #F5F5F5;
+$color-main-text: #424242;
+$color-main-grey:#888888;
+$color-gold: #eabf8b;
+
+$color-secondary-background: #e9e9e9;   
+
+// Media Query Widths
+$screen-xs-min: 480px !default;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
+
+$screen-xs-max: ($screen-sm-min - 0.1px) !default;
+$screen-sm-max: ($screen-md-min - 0.1px) !default;
+$screen-md-max: ($screen-lg-min - 0.1px) !default;
+
+$container-padding: 30px 0;
+
+@mixin section {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding: 2em 1.5em 4em;
+
+    .heading {
+        padding: 2em 1.5em;
+        text-align: center;
+        color: $color-dark-red;
+    }
+}

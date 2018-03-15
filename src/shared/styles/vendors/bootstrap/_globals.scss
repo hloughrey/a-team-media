@@ -1,0 +1,22 @@
+// Core variables and mixins
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+
+// Reset and dependencies
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/normalize';
+
+// Core CSS
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/scaffolding';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/grid';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/forms';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/buttons';
+
+// Components
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/navs';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/navbar';
+
+// Utility classes
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
+
+// $fa-font-path: '../../../../../node_modules/font-awesome/fonts';
+// @import '~font-awesome/scss/font-awesome';

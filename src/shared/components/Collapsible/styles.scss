@@ -1,0 +1,27 @@
+@import '../../styles/_index';
+
+.collapsible {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    flex: 1;
+    background-color: $color-secondary-background;
+    padding: .75em;
+    font-size: 24px;
+    border-bottom: 2px solid $color-white;
+}
+
+.chevron {
+    float: right;
+}
+
+.collapsed {
+    display: none;
+}
+
+.visible {
+    display: block;
+    padding: .75em;
+}
