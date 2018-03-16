@@ -1,11 +1,11 @@
 import React from 'react';
-import { render } from 'react-dom';
+import {render} from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from '../shared/App';
-import { BrowserRouter as Router } from 'react-router-dom';
-
-console.log('rendering on client side');
 
 render (
-	<Router><App /></Router>, 
+	<BrowserRouter >
+		<App />
+	</BrowserRouter>,
 	document.getElementById('app')
 );

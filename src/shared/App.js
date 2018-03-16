@@ -8,19 +8,12 @@ import './styles/vendors/app.scss'; // global styles must be imported before com
 // Components
 import Page from './components/Page/Page';
 import routes from './routes/routes';
+import HomePage from './components/HomePage/HomePage';
 
 const App = () => (
 	<Page>
-		{routes.map((i, key) =>
-			<Route 
-				path={i.path} 
-				component={i.component} 
-				exact={i.exact} 
-				key={key} 
-			/> 
-		)}
+		<HomePage />
 	</Page>
-
 );
 
 export default App;
