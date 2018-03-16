@@ -37,11 +37,11 @@ module.exports = {
 	'Blog': [
 		{
 			'Location': 'Meldrum House',
-			'Video': 'https://mediazilla.com/Koz3kj543'
+			'Video': 'https://mediazilla.com/lp4uyz2l5'
 		},
 		{
-			'Location': 'Douglas Hotel',
-			'Video': 'https://mediazilla.com/hp0x0eor1'
+			'Location': 'Thainstone House',
+			'Video': 'https://mediazilla.com/Up4vaa3B1'
 		},
 		{
 			'Location': 'Banff Springs',

@@ -57,7 +57,7 @@ module.exports = {
       inject: true,
       template: path.join(path.resolve('.'), 'src/client/index.html')
     }),
-    new ExtractTextPlugin({filename: "[name].[chunkhash].css", allChunks: true }),
+    new ExtractTextPlugin({filename: "[name].[chunkhash].css", allChunks: true })
   ],
   output: {
     path: path.join(__dirname, 'dist'),

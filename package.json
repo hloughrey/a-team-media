@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf ./node_modules && rm -rf ./dist && npm install",
     "prod:build": "webpack --config webpack.config.server.js",
-    "build": "export NODE_ENV=development && webpack --config webpack.config.client.js",
+    "build": "rm -rf ./dist && webpack --config webpack.config.client.js",
     "dev:start": "NODE_ENV=dev webpack-dev-server --config webpack.config.client.js",
     "start": "pm2 start ./dist/app.js --name='a-team-media-ui' --no-daemon",
     "webpack-debug": "webpack --display-error-details"
