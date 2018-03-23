@@ -12,7 +12,7 @@ const SchoolsGroups = () => (
 			</div>
 			<div className='row'>
 				<div className='col-xs-12 col-md-6'>
-					<img className={styles.img} src='https://s3.eu-west-2.amazonaws.com/latitude55-website-resources/a-team-media/schools.png' />
+					<img className={styles.img} src='https://s3.eu-west-2.amazonaws.com/latitude55-website-resources/a-team-media/schools.jpg' />
 				</div>
 				<div className={`col-xs-12 col-md-6 ${styles.aboutWrapper}`}>
 					<p>Are you a school or group* that is having a show or performance?</p>
