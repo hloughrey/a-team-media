@@ -18,20 +18,13 @@ module.exports = {
 	},
 	'SocialMedia': [
 		{
-			'link': 'https://www.facebook.com',
+			'link': 'https://www.facebook.com/ateammediauk/',
 			'icon': 'fa-facebook-square'
 		},
 		{
-			'link': 'https://www.twitter.com',
-			'icon': 'fa-twitter-square'
-		},
-		{
-			'link': 'https://www.linkedin.com',
-			'icon': 'fa-linkedin'
-		},
-		{
-			'link': 'https://www.instagram.com',
-			'icon': 'fa-instagram'
+			'link': 'https://www.prsformusic.com/press/2016/prs-for-music-launches-new-member-anti-piracy-system-maps-to-combat-online-music-piracy',
+			'icon': '',
+			'image': 'https://s3.eu-west-2.amazonaws.com/latitude55-website-resources/a-team-media/licence.png'
 		}
 	],
 	'Blog': [

@@ -35,11 +35,14 @@ const Footer = (props) => (
 				<ul className={styles.socialMediaList}>
 					{props.socialMedia.map((social, index) => (
 						<li key={index}>
-							<a href={social.link}>
-								<i className={`fab ${social.icon} fa-3x`} aria-hidden='true'></i>
+							<a href={social.link} target='_blank'>
+								{social.icon
+									? <i className={`fab ${social.icon} fa-3x`} aria-hidden='true'></i>
+									: <img className={styles.image} src={social.image} />
+								}
 							</a>
 						</li>
-					))}
+					) )}
 				</ul>
 			</div>
 		</div>
