@@ -4,28 +4,11 @@ import styles from './styles.scss';
 
 const Pricing = () => (
 	<div className={`row ${styles.pricingTable}`}>
-		<div className={`col-xs-12 col-sm-4 ${styles.packageListings}`}>
-			<h2>Bronze Package</h2>
-			<div className={styles.packageInfo}>
-				<ul>
-					<li><span className={styles.packagePrice}>£900</span></li>
-					<li>Guest arrival</li>
-					<li>Ceremony</li>
-					<li>Guest candid shots</li>
-					<li>Speeches</li>
-					<li>Cutting of the cake</li>
-					<li>First Dance</li>
-					<li>3-5 minute highlights</li>
-					<li>Documentary Edit (between 60 and 120 mins)</li>
-					<li>2 x DVD or mix of DVD + Blu-ray in presentation case</li>
-				</ul>
-			</div>
-		</div>
-		<div className={`col-xs-12 col-sm-4 ${styles.packageListings} ${styles.featureListing}`}>
+		<div className={`col-xs-12 col-sm-3 ${styles.packageListings}`}>
 			<h2>Gold Package</h2>
 			<div className={styles.packageInfo}>
 				<ul>
-					<li><span className={styles.packagePrice}>£1300</span></li>
+					<li><span className={styles.packagePrice}>£1500</span></li>
 					<li>Bride or Groom Preparation (at 1 venue*)</li>
 					<li>Guest arrival</li>
 					<li>Ceremony</li>
@@ -42,12 +25,11 @@ const Pricing = () => (
 				</ul>
 			</div>
 		</div>
-		<div className={`col-xs-12 col-sm-4 ${styles.packageListings}`}>
+		<div className={`col-xs-12 col-sm-3 ${styles.packageListings}`}>
 			<h2>Silver Package</h2>
 			<div className={styles.packageInfo}>
 				<ul>
-					<li><span className={styles.packagePrice}>£1000</span></li>
-					<li>Bride or Groom Preparation (at 1 venue*)</li>
+					<li><span className={styles.packagePrice}>£1200</span></li>
 					<li>Guest arrival</li>
 					<li>Ceremony</li>
 					<li>Guest candid shots</li>
@@ -60,7 +42,39 @@ const Pricing = () => (
 				</ul>
 			</div>
 		</div>
+		<div className={`col-xs-12 col-sm-3 ${styles.packageListings}`}>
+			<h2>Bronze Package</h2>
+			<div className={styles.packageInfo}>
+				<ul>
+					<li><span className={styles.packagePrice}>£950</span></li>
+					<li>Guest arrival</li>
+					<li>Ceremony</li>
+					<li>Guest candid shots</li>
+					<li>Speeches</li>
+					<li>Cutting of the cake</li>
+					<li>First Dance</li>
+					<li>3-5 minute highlights</li>
+					<li>Documentary Edit (between 60 and 120 mins)</li>
+					<li>2 x DVD or mix of DVD + Blu-ray in presentation case</li>
+				</ul>
+			</div>
+		</div>
+		<div className={`col-xs-12 col-sm-3 ${styles.packageListings}`}>
+			<h2>Pewter Package</h2>
+			<div className={styles.packageInfo}>
+				<ul>
+					<li><span className={styles.packagePrice}>£750</span></li>
+					<li>Guest arrival</li>
+					<li>Ceremony</li>
+					<li>Guest candid shots</li>
+					<li>Speeches</li>
+					<li>3-5 minute highlights</li>
+					<li>Documentary Edit (between 60 and 120 mins)</li>
+					<li>2 x DVD or mix of DVD + Blu-ray in presentation case</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 );
 
-export default CSSModules(Pricing, styles);
+export default CSSModules( Pricing, styles );

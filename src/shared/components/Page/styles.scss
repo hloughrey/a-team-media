@@ -4,7 +4,6 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #f9f5f9 !important;
 
     p {
         color: $color-main-text;
@@ -20,7 +19,7 @@ body {
 
     .mainRow {
         margin-right: 0;
-        margin-left: 0; 
+        margin-left: 0;
     }
 }
 
@@ -30,9 +29,9 @@ p {
 }
 
 .footerWrapper {
+    @include background-image;
     padding: 15px;
     position: relative;
-    background-color: $color-secondary-background;
     width: 100%;
 }
 

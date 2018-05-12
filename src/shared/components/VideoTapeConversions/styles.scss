@@ -2,7 +2,7 @@
 
 .section {
 	@include section;
-	background-color: $color-secondary-background;
+	@include background-image;
 
 	.heading {
 		color: $color-dark-red;
@@ -10,7 +10,7 @@
 }
 
 .toDigitalWrapper {
-	
+
 	.toDigitalIntro {
 		margin: 15px 0;
 	}

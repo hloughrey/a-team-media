@@ -4,23 +4,25 @@ import Heading from '../Heading/Heading';
 import styles from './styles.scss';
 import Text from '../../lib/text';
 
+const initialState = {
+	name: '',
+	nameValid: false,
+	email: '',
+	emailValid: false,
+	telephone: null,
+	telephoneValid: false,
+	subject: '-- Please choose a subject --',
+	subjectValid: false,
+	message: '',
+	messageValid: false,
+	messageStatus: ''
+}
+
 class ContactUs extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = {
-			name: '',
-			nameValid: false,
-			email: '',
-			emailValid: false,
-			telephone: null,
-			telephoneValid: false,
-			subject: '-- Please choose a subject --',
-			subjectValid: false,
-			message: '',
-			messageValid: false,
-			messageStatus: ''
-		};
+		this.state = initialState;
 
 		this.onInputChange = this.onInputChange.bind(this);
 		this.onFormSubmit = this.onFormSubmit.bind(this);
@@ -30,6 +32,7 @@ class ContactUs extends React.Component {
 		this.renderContactUsForm = this.renderContactUsForm.bind(this);
 		this.renderSuccessAlert = this.renderSuccessAlert.bind(this);
 		this.renderErrorAlert = this.renderErrorAlert.bind(this);
+		this.isSubmitButtonDisabled = this.isSubmitButtonDisabled.bind(this);
 	}
 
 	sendContactUsMessage() {
@@ -48,19 +51,7 @@ class ContactUs extends React.Component {
 			})
 		})
 		.then(response => response.json())
-		.then(response => this.setState({
-			name: '',
-			nameValid: false,
-			email: '',
-			emailValid: false,
-			telephone: null,
-			telephoneValid: false,
-			subject: '-- Please choose a subject --',
-			subjectValid: false,
-			message: '',
-			messageValid: false,
-			messageStatus: response.status
-		}))
+		.then(response => this.setState(initialState))
 		.catch(error => new Error(error.message));
 	}
 
@@ -97,7 +88,7 @@ class ContactUs extends React.Component {
 		case 'subject':
 			newValue = {
 				subject: e.target.value,
-				subjectValid: e.target.value === '-- Please choose a subject --' ? false : true
+				subjectValid: e.target.value !== '-- Please choose a subject --' && true
 			};
 			break;
 		case 'telephone':
@@ -133,6 +124,10 @@ class ContactUs extends React.Component {
 		);
 	}
 
+	isSubmitButtonDisabled() {
+		return !Object.keys(this.state).filter(i => i.endsWith('Valid')).every(i => this.state[i])
+	}
+
 	renderContactUsForm() {
 		return (
 			<div className='col-xs-12 col-md-6'>
@@ -163,7 +158,10 @@ class ContactUs extends React.Component {
 							<textarea name='message' id='messageInput' rows='8' className='form-control' placeholder='Enquiry Details' value={this.state.message} onChange={this.onInputChange}/>
 						</div>
 						<div className='form-group'>
-							<button type='submit' className={`btn btn-primary btn-block btn-lg ${styles.submitButton}`}>Submit</button>
+							{this.isSubmitButtonDisabled()
+								? <button type='submit' className={`btn btn-primary btn-block btn-lg ${styles.submitButton}`} disabled>Submit</button>
+								: <button type='submit' className={`btn btn-primary btn-block btn-lg ${styles.submitButton}`}>Submit</button>
+							}
 						</div>
 					</form>
 				</div>

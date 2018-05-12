@@ -2,5 +2,5 @@
 
 .section {
 	@include section;
-	background-color: $color-secondary-background;
+	@include background-image;
 }

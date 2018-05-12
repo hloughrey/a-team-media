@@ -2,7 +2,7 @@
 
 .section {
 	@include section;
-	background-color: $color-white;
+	// background-color: $color-white;
 }
 
 .img {
@@ -16,7 +16,7 @@
 }
 
 @media only screen and (min-width: $screen-md-min) {
-	
+
 	.aboutWrapper {
 		margin-top: 0;
 	}
