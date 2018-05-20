@@ -1,4 +1,5 @@
 import React from 'react';
+import Axios from 'axios';
 import CSSModules from 'react-css-modules';
 import Heading from '../Heading/Heading';
 import styles from './styles.scss';
@@ -36,23 +37,20 @@ class ContactUs extends React.Component {
 	}
 
 	sendContactUsMessage() {
-		fetch('http://email-generator.a-team-media.co.uk',
-		{
-			headers: {
-				'Accept': 'application/json',
-				'Content-Type': 'application/json'
-			},
-			method: 'POST',
-			body: JSON.stringify({
-				from: this.state.email,
-				phone: this.state.telephone,
-				subject: this.state.subject,
-				text: this.state.message
-			})
+		Axios.post('https://tkaky0kcik.execute-api.eu-west-1.amazonaws.com/prod/contact', {
+			subject: this.state.subject,
+			from: this.state.email,
+			phone: this.state.telephone,
+			text: this.state.message
 		})
-		.then(response => response.json())
-		.then(response => this.setState(initialState))
-		.catch(error => new Error(error.message));
+			.then(response => {
+				if (response.status === 200) {
+					let newState = initialState;
+					newState.messageStatus = 'Success';
+					this.setState(newState);
+				}
+			})
+			.catch(error => this.setState({ messageStatus: 'Error' }));
 	}
 
 	onFormSubmit(e) {
@@ -73,36 +71,36 @@ class ContactUs extends React.Component {
 		let newValue;
 
 		switch (e.target.name) {
-		case 'name':
-			newValue = {
-				name: e.target.value,
-				nameValid: e.target.value.length ? true : false
-			};
-			break;
-		case 'email':
-			newValue = {
-				email: e.target.value,
-				emailValid: this.emailValidation(e.target.value)
-			};
-			break;
-		case 'subject':
-			newValue = {
-				subject: e.target.value,
-				subjectValid: e.target.value !== '-- Please choose a subject --' && true
-			};
-			break;
-		case 'telephone':
-			newValue = {
-				telephone: e.target.value,
-				telephoneValid: this.telephoneValidation(e.target.value)
-			};
-			break;
-		case 'message':
-			newValue = {
-				message: e.target.value,
-				messageValid: e.target.value.length ? true : false
-			};
-			break;
+			case 'name':
+				newValue = {
+					name: e.target.value,
+					nameValid: e.target.value.length ? true : false
+				};
+				break;
+			case 'email':
+				newValue = {
+					email: e.target.value,
+					emailValid: this.emailValidation(e.target.value)
+				};
+				break;
+			case 'subject':
+				newValue = {
+					subject: e.target.value,
+					subjectValid: e.target.value !== '-- Please choose a subject --' && true
+				};
+				break;
+			case 'telephone':
+				newValue = {
+					telephone: e.target.value,
+					telephoneValid: this.telephoneValidation(e.target.value)
+				};
+				break;
+			case 'message':
+				newValue = {
+					message: e.target.value,
+					messageValid: e.target.value.length ? true : false
+				};
+				break;
 		}
 
 		this.setState(...this.state, newValue);
@@ -135,15 +133,15 @@ class ContactUs extends React.Component {
 					<form onSubmit={this.onFormSubmit}>
 						<div className='form-group'>
 							<label htmlFor='nameInput'>Your Name (required)</label>
-							<input name='name' id='nameInput' type='text' className='form-control' placeholder='Name' value={this.state.name} onChange={this.onInputChange}/>
+							<input name='name' id='nameInput' type='text' className='form-control' placeholder='Name' value={this.state.name} onChange={this.onInputChange} />
 						</div>
 						<div className='form-group'>
 							<label htmlFor='emailInput'>Your Email (required)</label>
-							<input name='email' id='emailInput' type='email' className='form-control' placeholder='Email Address' value={this.state.email} onChange={this.onInputChange}/>
+							<input name='email' id='emailInput' type='email' className='form-control' placeholder='Email Address' value={this.state.email} onChange={this.onInputChange} />
 						</div>
 						<div className='form-group'>
 							<label htmlFor='telephoneInput'>Your Telephone Number</label>
-							<input name='telephone' id='telephoneInput' type='text' className='form-control' placeholder='Telephone Number' value={!this.state.telephone ? '' : this.state.telephone} onChange={this.onInputChange}/>
+							<input name='telephone' id='telephoneInput' type='text' className='form-control' placeholder='Telephone Number' value={!this.state.telephone ? '' : this.state.telephone} onChange={this.onInputChange} />
 						</div>
 						<div className='form-group'>
 							<label htmlFor='subjectSelect'>Subject</label>
@@ -155,7 +153,7 @@ class ContactUs extends React.Component {
 						</div>
 						<div className='form-group'>
 							<label htmlFor='messageInput'>Your Message</label>
-							<textarea name='message' id='messageInput' rows='8' className='form-control' placeholder='Enquiry Details' value={this.state.message} onChange={this.onInputChange}/>
+							<textarea name='message' id='messageInput' rows='8' className='form-control' placeholder='Enquiry Details' value={this.state.message} onChange={this.onInputChange} />
 						</div>
 						<div className='form-group'>
 							{this.isSubmitButtonDisabled()

@@ -12,6 +12,7 @@
     "webpack-debug": "webpack --display-error-details"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "bootstrap-sass": "^3.3.7",
     "express": "^4.16.2",
     "prop-types": "^15.5.10",
