@@ -37,12 +37,17 @@ class ContactUs extends React.Component {
 	}
 
 	sendContactUsMessage() {
-		Axios.post('https://tkaky0kcik.execute-api.eu-west-1.amazonaws.com/prod/contact', {
-			subject: this.state.subject,
-			from: this.state.email,
-			phone: this.state.telephone,
-			text: this.state.message
-		})
+		Axios.post('https://tkaky0kcik.execute-api.eu-west-1.amazonaws.com/prod/contact',
+			{
+				subject: this.state.subject,
+				from: this.state.email,
+				phone: this.state.telephone,
+				text: this.state.message
+			},
+			{
+				headers: { 'x-api-key': 'Ornn9GoxWP6AA6erxyULp7LYk0LUJAAl3QPp7zKF' }
+			}
+		)
 			.then(response => {
 				if (response.status === 200) {
 					let newState = initialState;
