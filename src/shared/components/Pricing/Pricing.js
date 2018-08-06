@@ -1,80 +1,66 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './styles.scss';
+import {
+    goldPackage,
+    silverPackage,
+    bronzePackage,
+    pewterPackage
+} from './copy';
 
-const Pricing = () => (
-	<div className={`row ${styles.pricingTable}`}>
-		<div className={`col-xs-12 col-sm-3 ${styles.packageListings}`}>
-			<h2>Gold Package</h2>
-			<div className={styles.packageInfo}>
-				<ul>
-					<li><span className={styles.packagePrice}>£1500</span></li>
-					<li>Bride or Groom Preparation (at 1 venue*)</li>
-					<li>Guest arrival</li>
-					<li>Ceremony</li>
-					<li>Guest candid shots</li>
-					<li>Speeches</li>
-					<li>Cutting of the cake</li>
-					<li>First Dance</li>
-					<li>Extra Evening Dances</li>
-					<li>Guest Interviews (great fun if guests allow) At venue till 10pm</li>
-					<li>3-5 minute highlights</li>
-					<li>Documentary Edit (between 60 and 120 mins)</li>
-					<li>2 x DVD or mix of DVD + Blu-ray + Full HD USB Media in Premium presentation case</li>
-					<li>Additional DVD or Blu-ray in ‘Movie Style’ case</li>
-				</ul>
-			</div>
-		</div>
-		<div className={`col-xs-12 col-sm-3 ${styles.packageListings}`}>
-			<h2>Silver Package</h2>
-			<div className={styles.packageInfo}>
-				<ul>
-					<li><span className={styles.packagePrice}>£1200</span></li>
-					<li>Guest arrival</li>
-					<li>Ceremony</li>
-					<li>Guest candid shots</li>
-					<li>Speeches</li>
-					<li>Cutting of the cake</li>
-					<li>First Dance</li>
-					<li>3-5 minute highlights</li>
-					<li>Documentary Edit (between 60 and 120 mins)</li>
-					<li>2 x DVD or mix of DVD + Blu-ray + Full HD USB Media in Premium presentation case</li>
-				</ul>
-			</div>
-		</div>
-		<div className={`col-xs-12 col-sm-3 ${styles.packageListings}`}>
-			<h2>Bronze Package</h2>
-			<div className={styles.packageInfo}>
-				<ul>
-					<li><span className={styles.packagePrice}>£950</span></li>
-					<li>Guest arrival</li>
-					<li>Ceremony</li>
-					<li>Guest candid shots</li>
-					<li>Speeches</li>
-					<li>Cutting of the cake</li>
-					<li>First Dance</li>
-					<li>3-5 minute highlights</li>
-					<li>Documentary Edit (between 60 and 120 mins)</li>
-					<li>2 x DVD or mix of DVD + Blu-ray in presentation case</li>
-				</ul>
-			</div>
-		</div>
-		<div className={`col-xs-12 col-sm-3 ${styles.packageListings}`}>
-			<h2>Pewter Package</h2>
-			<div className={styles.packageInfo}>
-				<ul>
-					<li><span className={styles.packagePrice}>£750</span></li>
-					<li>Guest arrival</li>
-					<li>Ceremony</li>
-					<li>Guest candid shots</li>
-					<li>Speeches</li>
-					<li>3-5 minute highlights</li>
-					<li>Documentary Edit (between 60 and 120 mins)</li>
-					<li>2 x DVD or mix of DVD + Blu-ray in presentation case</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-);
+const identifyPackage = p => {
+    switch (p) {
+        case 'goldPackage':
+            return goldPackage;
+        case 'silverPackage':
+            return silverPackage;
+        case 'bronzePackage':
+            return bronzePackage;
+        case 'pewterPackage':
+            return pewterPackage;
+        default:
+            return null;
+    }
+};
 
-export default CSSModules( Pricing, styles );
+const sortByOrderValue = (a, b) => a.order - b.order;
+
+const Pricing = () => {
+    const packages = ['Gold', 'Silver', 'Bronze', 'Pewter'];
+
+    return (
+        <div className={`row ${styles.pricingTable}`}>
+            {packages.map((p, index) => {
+                return (
+                    <div
+                        key={`package-${index}`}
+                        className={`col-xs-12 col-sm-3 ${
+                            styles.packageListings
+                        }`}
+                    >
+                        <h2>{`${p} Package`}</h2>
+                        <div className={styles.packageInfo}>
+                            <ul>
+                                {identifyPackage(`${p.toLowerCase()}Package`)
+                                    .sort(sortByOrderValue)
+                                    .map((d, index) => (
+                                        <li
+                                            key={`package-item-${index}`}
+                                            className={
+                                                index === 0 &&
+                                                styles.packagePrice
+                                            }
+                                        >
+                                            {d.feature}
+                                        </li>
+                                    ))}
+                            </ul>
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+    );
+};
+
+export default CSSModules(Pricing, styles);
