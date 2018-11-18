@@ -33,7 +33,7 @@ footer {
                     padding-left: 20px;
 
                     .company {
-                    font-weight: 700;
+                        font-weight: 700;
                     }
                 }
             }
@@ -47,6 +47,10 @@ footer {
         .socialMediaList {
             display: flex;
             list-style-type: none;
+            width: 100%;
+            align-items: center;
+            padding-left: 0;
+            justify-content: center;
 
             li {
                 margin: 5px;
@@ -55,16 +59,15 @@ footer {
                     color: $color-dark-red;
 
                     &:hover {
-                        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+                        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
                     }
                 }
             }
 
             .image {
-                width: 60%;
+                max-width: 100%;
             }
         }
-
     }
 
     .copyright {
@@ -73,18 +76,5 @@ footer {
         font-size: 14px;
         color: $color-dark-red;
         margin-bottom: 0;
-    }
-}
-
-@media only screen and (min-width: $screen-md-min) {
-
-    .footerSocialMedia {
-
-        .socialMediaList {
-
-            .image {
-                width: 50%;
-            }
-        }
     }
 }

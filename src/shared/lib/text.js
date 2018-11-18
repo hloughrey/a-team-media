@@ -29,6 +29,11 @@ module.exports = {
                 'https://www.prsformusic.com/press/2016/prs-for-music-launches-new-member-anti-piracy-system-maps-to-combat-online-music-piracy',
             icon: '',
             image: `${cloudinary}/v1533585674/a-team-media/licence.png`
+        },
+        {
+            link: 'http://www.toptierawards.com/',
+            icon: '',
+            image: `${cloudinary}/v1542540666/a-team-media/Finalist.jpg`
         }
     ],
     Blog: [

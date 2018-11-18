@@ -8,7 +8,6 @@ body {
     p {
         color: $color-main-text;
     }
-
 }
 
 .mainContainer {
@@ -29,7 +28,6 @@ p {
 }
 
 .footerWrapper {
-    @include background-image;
     padding: 15px;
     position: relative;
     width: 100%;

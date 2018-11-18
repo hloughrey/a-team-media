@@ -1,28 +1,27 @@
 @import '../../styles/_index';
 
 .section {
-	@include section;
-	background-color: $color-white;
+    @include section;
+    @include background-image;
 }
 
 .img {
-	width: 100%;
-	box-shadow: 2px 4px 5px $color-main-grey;
-	border-radius: 5px;
+    width: 100%;
+    box-shadow: 2px 4px 5px $color-main-grey;
+    border-radius: 5px;
 }
 
 .contactUsWrapper {
-	margin-top: 2em;
+    margin-top: 2em;
 }
 
 .submitButton {
-	background-color: $color-dark-red !important;
-	border-color: $color-dark-red !important;
+    background-color: $color-dark-red !important;
+    border-color: $color-dark-red !important;
 }
 
 @media only screen and (min-width: $screen-lg-min) {
-	
-	.contactUsWrapper {
-		margin-top: 0;
-	}
+    .contactUsWrapper {
+        margin-top: 0;
+    }
 }
