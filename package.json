@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf ./node_modules && rm -rf ./dist && npm install",
+    "clean": "rm -rf ./node_modules && rm -rf ./dist && yarn",
     "prod:build": "webpack --config webpack.config.server.js",
     "build": "rm -rf ./dist && webpack --config webpack.config.client.js",
     "dev:start": "NODE_ENV=dev webpack-dev-server --config webpack.config.client.js",

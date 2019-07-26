@@ -7,12 +7,17 @@ import styles from './styles.scss';
 const Portfolio = () => (
     <div className="row">
         <div className={`col-xs-12 ${styles.highlights}`}>
-            <PortfolioVideo Video={'https://mediazilla.com/eod6fwuR1'} />
-        </div>
-        <div className="col-xs-12">
-            {Text.Blog.map((post, index) => (
-                <PortfolioVideo key={index} {...post} />
-            ))}
+            <p>
+                Our full{' '}
+                <a
+                    href="https://vimeo.com/ateammedia9761"
+                    target="blank"
+                    title="View our portfolio of work on Vimeo"
+                >
+                    Portfolio
+                </a>{' '}
+                of work can be found on Vimeo.
+            </p>
         </div>
     </div>
 );

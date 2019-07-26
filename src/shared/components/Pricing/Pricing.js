@@ -93,7 +93,7 @@ const Pricing = () => (
             </div>
         </div>
         <p>
-            To secure a booking we require a £150 non-returnable booking fee,
+            To secure a booking we require a £200 non-returnable booking fee,
             which is taken off your final invoice.
         </p>
         <p>
