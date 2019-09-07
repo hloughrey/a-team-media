@@ -12,9 +12,9 @@ const Pricing = () => (
         <p>
             Our <strong>‘Essential Film Package’</strong> covers the most
             important parts of your day and we believe this is excellent value
-            for money for the style of filming and production we provide. This
-            enables you to build the perfect package to suit you - after all it
-            is your special day.
+            for money for the traditional style of filming and production we
+            provide. This enables you to build the perfect package to suit you -
+            after all it is your special day.
         </p>
         <p>
             Your ceremony, speeches and first dance will be covered with up to 3
@@ -22,13 +22,19 @@ const Pricing = () => (
             the day, yet filmed in a discreet way.
         </p>
         <p>
-            Your final footage will include a ‘Highlights’ clip and a full
-            ‘Documentary’ edited film set to music (subject to licensing).
+            Your final footage will include a ‘Highlights’ clip and a
+            traditional styled ‘Documentary Film’ set to music (subject to
+            licensing).
         </p>
         <p>
-            You will receive an excellent presentation box including a DVD,
-            Blu-ray and USB with full menu and chapters making each edited part
-            of your day easily accessible at the click of a button.
+            Digital media is changing fast, we know the majority of our couples
+            stream their TV and movie viewing via internet suppliers such as
+            Netflix, Amazon Prime, Apple TV and many more so we are having to
+            adapt to these changes and will now offer full digital delivery
+            service where you can stream your footage via our partners at
+            Mediazilla. Along with a streaming version of your documentary
+            styled film, you will receive a beautifully presented USB with your
+            ‘Highlights’ and ‘Documentary Film’ attached in MP4 format.
         </p>
         <p>
             If your requirements are not met with the list below then please get
@@ -37,9 +43,7 @@ const Pricing = () => (
         </p>
         <div className="row">
             <div
-                className={`col-xs-12 col-sm-6 ${styles.packageListings} ${
-                    styles.featureListing
-                }`}
+                className={`col-xs-12 col-sm-6 ${styles.packageListings} ${styles.featureListing}`}
             >
                 <h2>Essential Film Package</h2>
                 <div className={styles.packageInfo}>
@@ -57,9 +61,7 @@ const Pricing = () => (
                 </div>
             </div>
             <div
-                className={`col-xs-12 col-sm-6 ${styles.packageListings} ${
-                    styles.featureListing
-                }`}
+                className={`col-xs-12 col-sm-6 ${styles.packageListings} ${styles.featureListing}`}
             >
                 <h2>Bonus Features</h2>
                 <div className={styles.packageInfo}>
@@ -70,15 +72,10 @@ const Pricing = () => (
                             (Filmed in a relaxed way)
                         </li>
                         <li>
-                            Video Guest Messages after First Dance{' '}
-                            <span className={styles.highlight}>**</span> + £150
+                            Video 'Guest Messages' after First Dance{' '}
+                            <span className={styles.highlight}>**</span> + £200
                             (Great fun for everyone who gets involved, couples
                             and guests love it)
-                        </li>
-                        <li>
-                            Online private video channel of your wedding film +
-                            £100.00 (Amazing option for sharing with friends and
-                            family who may not have made the day)
                         </li>
                         <li className={styles.highlight}>
                             * Based on a single location, if two locations, it
@@ -86,7 +83,7 @@ const Pricing = () => (
                             hired at an additional cost.
                         </li>
                         <li className={styles.highlight}>
-                            ** Filming till 10pm
+                            ** Filming until 10pm
                         </li>
                     </ul>
                 </div>
