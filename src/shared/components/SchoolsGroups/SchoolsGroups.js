@@ -34,15 +34,15 @@ const SchoolsGroups = () => (
                         everyone?
                     </p>
                     <p>
-                        We offer a fantastic service for schools and groups that
-                        require their show filmed, edited and produced for DVD,
-                        Blu-ray, MP4 file or even online sharing**. This service
-                        can mean that it is completely FREE for the
-                        school/group.
+                        We offer a fantastic professional service for schools
+                        and groups that require their show filmed, edited and
+                        produced for DVD, Blu-ray, MP4 file or even online
+                        sharing**. This service can mean that it is completely
+                        FREE for the school/group.
                     </p>
                     <p>
                         We have a minimum order of 30 standard DVD’s per show,
-                        but each DVD is only £7 and comes designed and labelled
+                        but each DVD is only £10 and comes designed and labelled
                         with the same level of multi camera filming, editing and
                         professionalism we use for our weddings. That means
                         everyone can enjoy the performance without having to
@@ -56,11 +56,11 @@ const SchoolsGroups = () => (
                         booking up early is recommended to avoid disappointment.
                     </p>
                     <span>
-                        *Schools and small groups only. Performing arts groups
+                        * Schools and small groups only. Performing arts groups
                         are not included.
                     </span>
                     <br />
-                    <span>**Premium options are at an extra cost</span>
+                    <span>** Premium options are at an extra cost</span>
                 </div>
             </div>
         </div>
