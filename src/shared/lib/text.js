@@ -34,6 +34,11 @@ module.exports = {
             link: 'http://www.toptierawards.com/',
             icon: '',
             image: `${cloudinary}/v1542540666/a-team-media/Finalist.jpg`
+        },
+        {
+            link: 'http://www.toptierawards.com/',
+            icon: '',
+            image: `${cloudinary}/v1542540666/a-team-media/Finalist_2019.jpg`
         }
     ],
     Blog: [

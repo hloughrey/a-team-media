@@ -54,6 +54,11 @@ footer {
 
             li {
                 margin: 5px;
+                flex: 1;
+
+                &:first-of-type {
+                    flex: 0;
+                }
 
                 a {
                     color: $color-dark-red;
