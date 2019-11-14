@@ -99,6 +99,17 @@ const Pricing = () => (
             link to view.
         </p>
         <p>If you have any questions at all, do not hesitate to ask.</p>
+        <div className={styles.halfDay}>
+            <p className={styles.highlight}>
+                Why not ask us about our special £800 half day option, covering
+                guest arrival through to the speeches.
+            </p>
+            <img
+                src="https://res.cloudinary.com/latitude55/image/upload/c_scale,h_350/v1573158850/a-team-media/HalfDayTransparent.png"
+                alt="Special Half Day Offer"
+                role="presentation"
+            />
+        </div>
     </div>
 );
 
