@@ -1,0 +1,19 @@
+@import '../../styles/index';
+
+.section {
+    @include section;
+    @include background-image;
+}
+
+.tabs {
+    margin-bottom: 2em !important;
+
+    li {
+        font-size: 14px;
+        font-weight: 600;
+
+        a {
+            color: #424242 !important;
+        }
+    }
+}
