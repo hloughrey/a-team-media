@@ -107,7 +107,7 @@ export function ContactUs() {
                                 </p>
                             </div>
                         )}
-                        {state.status === 'SUCCESS' && (
+                        {state.status === 'SUCCESS' ? (
                             <div className="alert alert-dismissible alert-success">
                                 <p>
                                     <strong>Awesome sauce!</strong> We
@@ -121,104 +121,121 @@ export function ContactUs() {
                                     Reset
                                 </button>
                             </div>
+                        ) : (
+                            <div className={styles.contactUsWrapper}>
+                                <form onSubmit={handleSubmit} method="post">
+                                    <div className="form-group">
+                                        <label htmlFor="nameInput">
+                                            Your Name (required)
+                                        </label>
+                                        <input
+                                            name="name"
+                                            id="nameInput"
+                                            type="text"
+                                            className="form-control"
+                                            placeholder="Name"
+                                            disabled={
+                                                state.status === 'PENDING'
+                                            }
+                                            value={state.name}
+                                            onChange={updateFieldValue('name')}
+                                        />
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="emailInput">
+                                            Your Email (required)
+                                        </label>
+                                        <input
+                                            name="email"
+                                            id="emailInput"
+                                            type="email"
+                                            className="form-control"
+                                            placeholder="Email Address"
+                                            disabled={
+                                                state.status === 'PENDING'
+                                            }
+                                            value={state.email}
+                                            onChange={updateFieldValue('email')}
+                                        />
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="telephoneInput">
+                                            Your Telephone Number
+                                        </label>
+                                        <input
+                                            name="telephone"
+                                            id="telephoneInput"
+                                            type="text"
+                                            className="form-control"
+                                            placeholder="Telephone Number"
+                                            disabled={
+                                                state.status === 'PENDING'
+                                            }
+                                            value={state.telephone}
+                                            onChange={updateFieldValue(
+                                                'telephone'
+                                            )}
+                                        />
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="subjectSelect">
+                                            Subject
+                                        </label>
+                                        <select
+                                            name="subject"
+                                            id="subjectSelect"
+                                            className="form-control"
+                                            disabled={
+                                                state.status === 'PENDING'
+                                            }
+                                            value={state.subject}
+                                            onChange={updateFieldValue(
+                                                'subject'
+                                            )}
+                                        >
+                                            {text.ContactUs.Subjects.map(
+                                                (subject, index) => (
+                                                    <option
+                                                        key={index}
+                                                        value={subject}
+                                                    >
+                                                        {subject}
+                                                    </option>
+                                                )
+                                            )}
+                                        </select>
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="messageInput">
+                                            Your Message
+                                        </label>
+                                        <textarea
+                                            name="message"
+                                            id="messageInput"
+                                            rows={8}
+                                            className="form-control"
+                                            placeholder="Enquiry Details"
+                                            disabled={
+                                                state.status === 'PENDING'
+                                            }
+                                            value={state.message}
+                                            onChange={updateFieldValue(
+                                                'message'
+                                            )}
+                                        />
+                                    </div>
+                                    <div className="form-group">
+                                        <button
+                                            type="submit"
+                                            className={`btn btn-primary btn-block btn-lg ${styles.submitButton}`}
+                                            disabled={submitButtonIsDisabled}
+                                        >
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         )}
-                        <div className={styles.contactUsWrapper}>
-                            <form onSubmit={handleSubmit} method="post">
-                                <div className="form-group">
-                                    <label htmlFor="nameInput">
-                                        Your Name (required)
-                                    </label>
-                                    <input
-                                        name="name"
-                                        id="nameInput"
-                                        type="text"
-                                        className="form-control"
-                                        placeholder="Name"
-                                        disabled={state.status === 'PENDING'}
-                                        value={state.name}
-                                        onChange={updateFieldValue('name')}
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="emailInput">
-                                        Your Email (required)
-                                    </label>
-                                    <input
-                                        name="email"
-                                        id="emailInput"
-                                        type="email"
-                                        className="form-control"
-                                        placeholder="Email Address"
-                                        disabled={state.status === 'PENDING'}
-                                        value={state.email}
-                                        onChange={updateFieldValue('email')}
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="telephoneInput">
-                                        Your Telephone Number
-                                    </label>
-                                    <input
-                                        name="telephone"
-                                        id="telephoneInput"
-                                        type="text"
-                                        className="form-control"
-                                        placeholder="Telephone Number"
-                                        disabled={state.status === 'PENDING'}
-                                        value={state.telephone}
-                                        onChange={updateFieldValue('telephone')}
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="subjectSelect">
-                                        Subject
-                                    </label>
-                                    <select
-                                        name="subject"
-                                        id="subjectSelect"
-                                        className="form-control"
-                                        disabled={state.status === 'PENDING'}
-                                        value={state.subject}
-                                        onChange={updateFieldValue('subject')}
-                                    >
-                                        {text.ContactUs.Subjects.map(
-                                            (subject, index) => (
-                                                <option
-                                                    key={index}
-                                                    value={subject}
-                                                >
-                                                    {subject}
-                                                </option>
-                                            )
-                                        )}
-                                    </select>
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="messageInput">
-                                        Your Message
-                                    </label>
-                                    <textarea
-                                        name="message"
-                                        id="messageInput"
-                                        rows={8}
-                                        className="form-control"
-                                        placeholder="Enquiry Details"
-                                        disabled={state.status === 'PENDING'}
-                                        value={state.message}
-                                        onChange={updateFieldValue('message')}
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <button
-                                        type="submit"
-                                        className={`btn btn-primary btn-block btn-lg ${styles.submitButton}`}
-                                        disabled={submitButtonIsDisabled}
-                                    >
-                                        Submit
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
