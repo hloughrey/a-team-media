@@ -41,14 +41,18 @@ export function SchoolsGroups() {
                         <p>
                             We offer a fantastic professional service for
                             schools and groups that require their show filmed,
-                            edited and produced for DVD, Blu-ray, MP4 file or
-                            even online sharing**. This service can mean that it
-                            is completely FREE for the school/group.
+                            edited and produced for on behalf of the school,
+                            group or parents. This service can mean that it is
+                            completely FREE for the school/group.
                         </p>
                         <p>
-                            We have a minimum order of 30 standard DVD’s per
-                            show, but each DVD is only £10 and comes designed
-                            and labelled with the same level of multi camera
+                            Obviously DVD is old technology so our projects are
+                            delivered either via USB or via digital delivery,
+                            this retains the quality but also allows you to make
+                            sure a copy is safe from being scratched or lost.
+                        </p>
+                        <p>
+                            Each project is the same level of multi camera
                             filming, editing and professionalism we use for our
                             weddings. That means everyone can enjoy the
                             performance without having to view it through the
@@ -56,11 +60,11 @@ export function SchoolsGroups() {
                             wrong.
                         </p>
                         <p>
-                            We have filmed for several Aberdeenshire Schools and
-                            other groups with great success. Our school nativity
-                            recordings go down a treat with parents every year
-                            and booking up early is recommended to avoid
-                            disappointment.
+                            We have filmed for several Aberdeen city and shire
+                            Schools and other groups with great success over the
+                            years. Our school nativity recordings go down a
+                            treat with parents every year and booking up early
+                            is recommended to avoid disappointment.
                         </p>
                         <span>
                             * Schools and small groups only. Performing arts
