@@ -1,8 +1,8 @@
 module.exports = {
     siteMetadata: {
-        title: `Gatsby Default Starter`,
-        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-        author: `@gatsbyjs`,
+        title: `A-Team-Media | Aberdeenshire Wedding & School or Group Videography Consultant`,
+        description: `description' content='Aberdeenshire videography service specialising in Weddings & School, or Group performances. Our expert Videography will work with you to capture your special event & provide a professionally edited copy in a variety of digital formats. We also provide services to convert old videos & photo slides into modern digital formats.`,
+        author: `Hugh Loughrey`,
     },
     plugins: [
         `gatsby-plugin-sass`,
