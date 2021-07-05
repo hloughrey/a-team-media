@@ -40,6 +40,11 @@ export const text = {
             icon: '',
             image: `${credentials.cloudinary}/v1542540666/a-team-media/ScottishWeddings.png`,
         },
+        {
+            link: 'https://www.corporatelivewire.com/',
+            icon: '',
+            image: `${credentials.cloudinary}/v1542540666/a-team-media/corporateLivewire.png`,
+        },
     ],
     Blog: [
         {
