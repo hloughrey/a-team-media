@@ -33,12 +33,12 @@ export const text = {
         {
             link: 'http://www.toptierawards.com/',
             icon: '',
-            image: `${credentials.cloudinary}/v1542540666/a-team-media/Finalist.jpg`,
+            image: `${credentials.cloudinary}/v1542540666/a-team-media/TopTier.png`,
         },
         {
-            link: 'http://www.toptierawards.com/',
+            link: 'http://www.weloveweddings.info/',
             icon: '',
-            image: `${credentials.cloudinary}/v1542540666/a-team-media/Finalist_2019.jpg`,
+            image: `${credentials.cloudinary}/v1542540666/a-team-media/ScottishWeddings.png`,
         },
     ],
     Blog: [

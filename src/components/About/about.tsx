@@ -23,6 +23,10 @@ export function About() {
                         className={`col-xs-12 col-md-6 ${styles.aboutWrapper}`}
                     >
                         <p>
+                            I am an award winning Videographer based in
+                            Oldmeldrum, Aberdeenshire Scotland.
+                        </p>
+                        <p>
                             My business was established in 2013 under the brand
                             names ‘Aberdeenshire Video Editing’ and ‘AVE Wedding
                             Films’ and our services remain the same today under
@@ -57,6 +61,12 @@ export function About() {
                             We strive to ensure you get the best service
                             possible, along with the best product we can supply
                             with fantastic value for money.
+                        </p>
+                        <p>
+                            We have been very fortunate to have been selected as
+                            a finalist for many awards over the past fee years
+                            and were the winners of the Prestige Awards Scotland
+                            Videographer of the year for 2021/22.
                         </p>
                     </div>
                 </div>

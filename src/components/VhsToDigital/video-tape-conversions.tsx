@@ -50,7 +50,7 @@ export function VhsToDigital() {
                                     <li>
                                         One DVD - £20 (up to 3 hours of footage)
                                     </li>
-                                    <li>Each additional DVD - £15</li>
+                                    <li>Each additional DVD - £20</li>
                                     <li>Copy of a DVD - £10</li>
                                 </ul>
                             </div>
