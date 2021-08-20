@@ -9,12 +9,11 @@
 }
 
 .pricingTable {
-    margin-top: 4em;
+    margin: auto !important;
 }
 
 .packageListings {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px auto;
     text-align: center;
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -54,15 +53,6 @@
                 }
             }
         }
-    }
-}
-
-.halfDay {
-    text-align: center;
-    margin: 2em 0 1rem;
-
-    p {
-        text-align: center;
     }
 }
 

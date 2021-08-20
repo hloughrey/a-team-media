@@ -43,27 +43,41 @@ export function Pricing() {
                 get in touch to discuss your own wishes for a totally bespoke
                 package especially tailored for you.
             </p>
-            <div className="row">
+            <div className={`row ${styles.pricingTable}`}>
                 <div
-                    className={`col-xs-12 col-sm-6 ${styles.packageListings} ${styles.featureListing}`}
+                    className={`col-xs-12 col-sm-5 ${styles.packageListings} ${styles.featureListing}`}
+                >
+                    <h2>Half Day Package</h2>
+                    <div className={styles.packageInfo}>
+                        <ul>
+                            <li>£900</li>
+                            <li>Guest arrival</li>
+                            <li>Full ceremony</li>
+                            <li>Drinks reception</li>
+                            <li>Full speeches</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    className={`col-xs-12 col-sm-5 col-sm-offset-2 ${styles.packageListings} ${styles.featureListing}`}
                 >
                     <h2>Essential Film Package</h2>
                     <div className={styles.packageInfo}>
                         <ul>
                             <li>£1200</li>
+                            <li>Half day features, plus:</li>
                             <li>Establishing shots of your chosen venue(s)</li>
-                            <li>Guests Arrival</li>
-                            <li>Full Ceremony</li>
-                            <li>Drinks Reception</li>
-                            <li>Full Speeches</li>
                             <li>Evening Guests Arrival</li>
                             <li>Cake Cutting</li>
                             <li>First Dance</li>
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div className={`row ${styles.pricingTable}`}>
                 <div
-                    className={`col-xs-12 col-sm-6 ${styles.packageListings} ${styles.featureListing}`}
+                    className={`col-xs-12 ${styles.packageListings} ${styles.featureListing}`}
                 >
                     <h2>Bonus Features</h2>
                     <div className={styles.packageInfo}>
@@ -71,12 +85,12 @@ export function Pricing() {
                             <li>
                                 Bride/Groom preparations{' '}
                                 <span className={styles.highlight}>*</span> +
-                                £200 (Filmed in a relaxed way)
+                                £250 (Filmed in a relaxed way)
                             </li>
                             <li>
                                 Video 'Guest Messages' after First Dance{' '}
                                 <span className={styles.highlight}>**</span> +
-                                £200 (Great fun for everyone who gets involved,
+                                £250 (Great fun for everyone who gets involved,
                                 couples and guests love it)
                             </li>
                             <li className={styles.highlight}>
@@ -102,21 +116,10 @@ export function Pricing() {
             </p>
             <p>
                 If you would like to see a sample of a complete wedding film
-                then please get in touch via the ‘CONTACT US’ page to receive a
+                then please get in touch via the ‘Contact Us’ page to receive a
                 digital link to view.
             </p>
             <p>If you have any questions at all, do not hesitate to ask.</p>
-            <div className={styles.halfDay}>
-                <p className={styles.highlight}>
-                    Why not ask us about our special £800 half day option,
-                    covering guest arrival through to the speeches.
-                </p>
-                <img
-                    src="https://res.cloudinary.com/latitude55/image/upload/c_scale,h_350/v1573158850/a-team-media/HalfDayTransparent.png"
-                    alt="Special Half Day Offer"
-                    role="presentation"
-                />
-            </div>
         </div>
     );
 }
