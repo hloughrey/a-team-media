@@ -35,8 +35,9 @@ export function Pricing() {
                 delivery service where you can stream your footage via our
                 partners at Mediazilla. Along with a streaming version of your
                 documentary styled film, you will receive a beautifully
-                presented USB with your ‘Highlights’ and ‘Documentary Film’
-                attached in MP4 format.
+                presented USB with your ‘Highlights’ and ‘Documentary Film’ in
+                an offline playable version through your computer which can be
+                HDMI linked to any TV.
             </p>
             <p>
                 If your requirements are not met with the list below then please
@@ -92,6 +93,9 @@ export function Pricing() {
                                 <span className={styles.highlight}>**</span> +
                                 £250 (Great fun for everyone who gets involved,
                                 couples and guests love it)
+                            </li>
+                            <li>
+                                Any entertainment during meal to be filmed - £75
                             </li>
                             <li className={styles.highlight}>
                                 * Based on a single location, if two locations,
