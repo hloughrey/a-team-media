@@ -65,7 +65,7 @@ export function Pricing() {
                     <h2>Essential Film Package</h2>
                     <div className={styles.packageInfo}>
                         <ul>
-                            <li>£1200</li>
+                            <li>£1400</li>
                             <li>Half day features, plus:</li>
                             <li>Establishing shots of your chosen venue(s)</li>
                             <li>Evening Guests Arrival</li>
