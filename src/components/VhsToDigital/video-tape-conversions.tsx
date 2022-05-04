@@ -48,10 +48,10 @@ export function VhsToDigital() {
                             <div className={styles.packageInfo}>
                                 <ul>
                                     <li>
-                                        One DVD - £20 (up to 3 hours of footage)
+                                        One DVD - £25 (up to 3 hours of footage)
                                     </li>
                                     <li>Each additional DVD - £20</li>
-                                    <li>Copy of a DVD - £10</li>
+                                    <li>Copy of a DVD - £15</li>
                                 </ul>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ export function VhsToDigital() {
                             <h2>MP4 Files</h2>
                             <div className={styles.packageInfo}>
                                 <ul>
-                                    <li>Tape converted to MP4 - £10</li>
+                                    <li>Tape converted to MP4 - £15</li>
                                     <li>Supplied on a USB - £10**</li>
                                     <li>
                                         Digital link supplied for download - £10
@@ -74,12 +74,10 @@ export function VhsToDigital() {
                     <div>
                         <ul className={styles.subPoints}>
                             <li>
-                                *This prices is on top of the conversion price,
-                                so 10 files on one USB would be £110 total.
+                                *These prices is on top of the conversion price, so 10 files on one USB would be £150 total.
                             </li>
                             <li>
-                                **Larger USB media may be required and will be a
-                                slight increase in cost.
+                                **Larger USB media may be required and will be a slight increase in cost.
                             </li>
                         </ul>
                         <p>

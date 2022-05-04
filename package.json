@@ -1,9 +1,9 @@
 {
-  "name": "mapaction-a-team-media",
+  "name": "a-team-media",
   "private": true,
-  "description": "An application to prove the concept that MapAction can easily publish maps online.",
+  "description": "A Team Media's business website",
   "version": "0.1.0",
-  "author": "MapAction",
+  "author": "Hugh Loughrey",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

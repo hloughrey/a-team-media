@@ -35,7 +35,7 @@ export function PhotosToDigital() {
                         sure each slide comes back to you correctly orientated.
                     </p>
                     <p>
-                        We charge 30p per slide and offer discounts for larger
+                        We charge 50p per slide and offer discounts for larger
                         orders. All your slides are put on to a Disc for safe
                         storage, which is labelled and supplied in a clear CD
                         case free of charge.
