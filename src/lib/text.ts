@@ -15,7 +15,7 @@ export const text = {
         AVE: 'A-Team Media',
         Address:
             '20 Le Roux Drive, Oldmeldrum, Aberdeenshire, Scotland, AB51 0PJ',
-        PhoneNumber: '07717 454658',
+        PhoneNumber: '07789620335',
         Email: 'info@a-team-media.co.uk ',
         Copyright: `Copyright (C) ${new Date().getFullYear()} A-Team Media`,
     },
