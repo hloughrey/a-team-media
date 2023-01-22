@@ -32,7 +32,7 @@ export function WeddingsIntro() {
                     film of your day as it unfolds. This will allow you to
                     relive your day again and again and also see the parts the
                     you never got to see on the day. We won’t follow the
-                    photographer around as its their job to get this personal
+                    photographer around as it’s their job to get these personal
                     photos with you. We will capture some elements of that for
                     the purposes of documenting your day.
                 </p>
@@ -43,11 +43,11 @@ export function WeddingsIntro() {
                 </p>
                 <p>
                     Once we have all your footage and audio we need to piece it
-                    all together for you with the music of your choice* and
-                    delivered to you in a such a beautiful package that you will
-                    feel like its your day again every time you see it.
+                    all together for you in a highlights film and separate
+                    elements of your day and deliver to you in a such a
+                    beautiful package that you will feel like it’s your day
+                    again every time you see it.
                 </p>
-                <span>*Subject to Licensing</span>
             </div>
             <div className="col-xs-12 col-md-6">
                 <img

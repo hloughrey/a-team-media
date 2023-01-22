@@ -11,7 +11,7 @@ export function Pricing() {
                 ‘Bonus Features’, making your package bespoke.
             </p>
             <p>
-                Our <strong>‘Essential Film Package’</strong> covers the most
+                Our <strong>Essential Film Package</strong> covers the most
                 important parts of your day and we believe this is excellent
                 value for money for the traditional style of filming and
                 production we provide. This enables you to build the perfect
@@ -23,9 +23,12 @@ export function Pricing() {
                 coverage of the day, yet filmed in a discreet way.
             </p>
             <p>
-                Your final footage will include a ‘Highlights’ clip and a
-                traditional styled ‘Documentary Film’ set to music (subject to
-                licensing).
+                Your final footage will include a ‘Highlights’ clip of your day
+                along with your full Ceremony, Speeches and First Dance
+                (Depending on package booked) and new from 2023 onwards, raw
+                unedited footage from your day (between 30 and 60 mins). This
+                really takes you back to those moments as it has the real
+                laughter, ambience of the day without any music drowning it out.
             </p>
             <p>
                 Digital media is changing fast, we know the majority of our
@@ -35,9 +38,9 @@ export function Pricing() {
                 delivery service where you can stream your footage via our
                 partners at Mediazilla. Along with a streaming version of your
                 documentary styled film, you will receive a beautifully
-                presented USB with your ‘Highlights’ and ‘Documentary Film’ in
-                an offline playable version through your computer which can be
-                HDMI linked to any TV.
+                presented USB with your "Highlights" and extras in an offline
+                playable version through your computer which can be HDMI linked
+                to any TV.
             </p>
             <p>
                 If your requirements are not met with the list below then please
@@ -51,7 +54,7 @@ export function Pricing() {
                     <h2>Half Day Package</h2>
                     <div className={styles.packageInfo}>
                         <ul>
-                            <li>£900</li>
+                            <li>£950</li>
                             <li>Guest arrival</li>
                             <li>Full ceremony</li>
                             <li>Drinks reception</li>
@@ -65,7 +68,7 @@ export function Pricing() {
                     <h2>Essential Film Package</h2>
                     <div className={styles.packageInfo}>
                         <ul>
-                            <li>£1400</li>
+                            <li>£1500</li>
                             <li>Half day features, plus:</li>
                             <li>Establishing shots of your chosen venue(s)</li>
                             <li>Evening Guests Arrival</li>
@@ -95,7 +98,8 @@ export function Pricing() {
                                 couples and guests love it)
                             </li>
                             <li>
-                                Any entertainment during meal to be filmed - £75
+                                Any entertainment during meal to be filmed -
+                                £100
                             </li>
                             <li className={styles.highlight}>
                                 * Based on a single location, if two locations,

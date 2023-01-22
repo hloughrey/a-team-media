@@ -46,11 +46,11 @@ export function About() {
                         </p>
                         <p>
                             Whilst the majority of the work in the business is
-                            carried out by myself, I have some assistants too,
-                            my dad (Allan) assists with the filming of weddings
-                            and other events and acts as my gofer the majority
-                            of the time and my mum (Irene) is fully trained to
-                            convert 35mm sides to digital.
+                            carried out by myself, I have some assistants who I
+                            bring in to assist with the filming of weddings and
+                            other events. I enjoy using media and film students
+                            to give the real world experience which helps them
+                            and the business.
                         </p>
                         <p>
                             Our services, no matter which you choose, remain
@@ -64,9 +64,9 @@ export function About() {
                         </p>
                         <p>
                             We have been very fortunate to have been selected as
-                            a finalist for many awards over the past fee years
-                            and were the winners of the Prestige Awards Scotland
-                            Videographer of the year for 2021/22.
+                            a finalist for many awards over the past few years
+                            and were the proud winners of the Prestige Awards
+                            Scotland Videographer of the year for 2021/22
                         </p>
                     </div>
                 </div>

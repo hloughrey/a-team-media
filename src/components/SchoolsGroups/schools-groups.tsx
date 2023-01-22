@@ -35,8 +35,7 @@ export function SchoolsGroups() {
                         </p>
                         <p>
                             Thinking of using a nominated parent with a ‘decent’
-                            camcorder or iPad to film the show and produce DVDs
-                            for everyone?
+                            camcorder or iPad to film the show?
                         </p>
                         <p>
                             We offer a fantastic professional service for
@@ -66,10 +65,7 @@ export function SchoolsGroups() {
                             treat with parents every year and booking up early
                             is recommended to avoid disappointment.
                         </p>
-                        <span>
-                            * Schools and small groups only. Performing arts
-                            groups are not included.
-                        </span>
+                        <span>* Schools and small groups only.</span>
                         <br />
                         <span>** Premium options are at an extra cost</span>
                     </div>

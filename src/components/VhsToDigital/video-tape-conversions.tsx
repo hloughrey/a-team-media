@@ -42,21 +42,7 @@ export function VhsToDigital() {
                     </div>
                     <div className="row">
                         <div
-                            className={`col-xs-12 col-sm-6 ${styles.packageListings} ${styles.featureListing}`}
-                        >
-                            <h2>DVD</h2>
-                            <div className={styles.packageInfo}>
-                                <ul>
-                                    <li>
-                                        One DVD - £25 (up to 3 hours of footage)
-                                    </li>
-                                    <li>Each additional DVD - £20</li>
-                                    <li>Copy of a DVD - £15</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div
-                            className={`col-xs-12 col-sm-6 ${styles.packageListings} ${styles.featureListing}`}
+                            className={`col-sm-offset-3 col-xs-12 col-sm-6 col-sm-offset-3 ${styles.packageListings} ${styles.featureListing}`}
                         >
                             <h2>MP4 Files</h2>
                             <div className={styles.packageInfo}>
@@ -74,17 +60,19 @@ export function VhsToDigital() {
                     <div>
                         <ul className={styles.subPoints}>
                             <li>
-                                *These prices is on top of the conversion price, so 10 files on one USB would be £150 total.
+                                *These prices is on top of the conversion price,
+                                so 10 files on one USB would be £160 total.
                             </li>
                             <li>
-                                **Larger USB media may be required and will be a slight increase in cost.
+                                **Larger USB media may be required and will be a
+                                slight increase in cost.
                             </li>
                         </ul>
                         <p>
                             USB storage is by far the best storage for your
                             files as it can be copied and saved on other formats
-                            easily. DVD is essential dead technology and take
-                            much longer to create but is not as safe.
+                            easily. DVD is now dead technology and is no longer
+                            supplied.
                         </p>
                     </div>
                 </div>
