@@ -5,12 +5,10 @@
   "version": "0.1.0",
   "author": "Hugh Loughrey",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "next dev",
+    "build": "next build",
+    "serve": "npx serve@latest out",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
     "lint:formatting": "prettier --check '**/*.ts?(x)'",
     "lint:css": "stylelint \"**/*.styled.ts\"",
     "lint": "eslint \"src/**/*.ts?(x)\" --quiet",
@@ -18,15 +16,13 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "gatsby": "5.16.1",
-    "gatsby-plugin-manifest": "5.16.0",
-    "gatsby-plugin-sass": "6.16.0",
-    "gatsby-source-filesystem": "5.16.0",
+    "next": "15.3.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "sass": "1.97.3"
   },
   "devDependencies": {
+    "@types/react": "19.2.14",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "eslint": "8.57.1",

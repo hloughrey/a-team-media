@@ -20,8 +20,20 @@
                 "varsIgnorePattern": "react|_"
             }
         ],
-        "unicorn/no-reduce": "off"
+        "unicorn/no-reduce": "off",
+        "react/react-in-jsx-scope": "off"
     },
+    "overrides": [
+        {
+            "files": ["*.config.js"],
+            "rules": {
+                "unicorn/prefer-module": "off"
+            },
+            "env": {
+                "node": true
+            }
+        }
+    ],
     "settings": {
         "react": {
             "version": "detect"

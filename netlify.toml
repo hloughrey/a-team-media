@@ -1,17 +1,9 @@
 [build]
-  publish = "public"
+  publish = "out"
   command = "npm run build"
 
 [build.environment]
   NODE_VERSION = "22"
-
-# Disable incompatible Gatsby plugin
-# Gatsby 5 uses gatsby-adapter-netlify natively - no need for @netlify/plugin-gatsby
-[[plugins]]
-  package = "@netlify/plugin-gatsby"
-
-  [plugins.inputs]
-    disabled = true
 
 [[redirects]]
   from = "/*"

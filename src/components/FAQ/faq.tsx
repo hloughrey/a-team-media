@@ -18,10 +18,10 @@ export function FAQ({ text }: TFaq) {
                     text.map((faq, index) => (
                         <Collapsible
                             key={`Collapsible-${index}`}
-                            heading={faq.question}
+                            heading={faq}
                             isOpen={index === 0 ? true : false}
                         >
-                            {/* {ReactHtmlParser(faq.answer)} */}
+                            <div>{faq}</div>
                         </Collapsible>
                     ))}
             </div>
