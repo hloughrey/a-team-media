@@ -5,11 +5,6 @@
 [build.environment]
   NODE_VERSION = "22"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
 # Security headers for all pages
 [[headers]]
   for = "/*"
@@ -35,19 +30,13 @@
     # HSTS (HTTP Strict Transport Security)
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
 
-# Cache control for JavaScript
+# Cache control for Next.js static assets (hashed, immutable)
 [[headers]]
-  for = "/*.js"
+  for = "/_next/static/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Cache control for CSS
-[[headers]]
-  for = "/*.css"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Cache control for static assets
+# Cache control for custom static assets (if any)
 [[headers]]
   for = "/static/*"
   [headers.values]
