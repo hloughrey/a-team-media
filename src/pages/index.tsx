@@ -14,7 +14,6 @@ import {
 export default function HomePage() {
     return (
         <Layout>
-            <Seo title="A-Team Media" />
             <div className="row">
                 <Hero />
                 <About />
@@ -27,3 +26,5 @@ export default function HomePage() {
         </Layout>
     );
 }
+
+export const Head = () => <Seo title="A-Team Media" />;

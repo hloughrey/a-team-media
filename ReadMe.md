@@ -1,9 +1,9 @@
 ## 🚦 Requirements
 
--   NodeJs
--   Yarn v1.x
--   IDE of choice
--   Git
+- NodeJs
+- Yarn v1.x
+- IDE of choice
+- Git
 
 ### 🚀 Quick start
 

@@ -1,5 +1,4 @@
 export * from './About';
-export * from './BookingForm';
 export * from './Collapsible';
 export * from './ContactUs';
 export * from './FAQ';

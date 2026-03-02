@@ -38,9 +38,9 @@ export function Pricing() {
                 delivery service where you can stream your footage via our
                 partners at Mediazilla. Along with a streaming version of your
                 documentary styled film, you will receive a beautifully
-                presented USB with your "Highlights" and extras in an offline
-                playable version through your computer which can be HDMI linked
-                to any TV.
+                presented USB with your &quot;Highlights&quot; and extras in an
+                offline playable version through your computer which can be HDMI
+                linked to any TV.
             </p>
             <p>
                 If your requirements are not met with the list below then please
@@ -92,7 +92,8 @@ export function Pricing() {
                                 £250 (Filmed in a relaxed way)
                             </li>
                             <li>
-                                Video 'Guest Messages' after First Dance{' '}
+                                Video &apos;Guest Messages&apos; after First
+                                Dance{' '}
                                 <span className={styles.highlight}>**</span> +
                                 £250 (Great fun for everyone who gets involved,
                                 couples and guests love it)

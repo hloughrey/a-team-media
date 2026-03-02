@@ -5,13 +5,14 @@ module.exports = {
         author: `Hugh Loughrey`,
     },
     plugins: [
-        `gatsby-plugin-sass`,
-        `gatsby-plugin-react-helmet`,
         {
-            resolve: 'gatsby-plugin-react-svg',
+            resolve: `gatsby-plugin-sass`,
             options: {
-                rule: {
-                    include: /images/, // See below to configure properly
+                cssLoaderOptions: {
+                    esModule: false,
+                    modules: {
+                        namedExport: false,
+                    },
                 },
             },
         },
@@ -22,8 +23,6 @@ module.exports = {
                 path: `${__dirname}/src/images`,
             },
         },
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -33,17 +32,8 @@ module.exports = {
                 background_color: `#663399`,
                 theme_color: `#663399`,
                 display: `minimal-ui`,
-                icon: `src/images/a-team-media.png`, // This path is relative to the root of the site.
+                icon: `src/images/a-team-media.png`,
             },
         },
-        {
-            resolve: 'gatsby-plugin-react-leaflet',
-            options: {
-                linkStyles: true, // (default: true) Enable/disable loading stylesheets via CDN
-            },
-        },
-        // this (optional) plugin enables Progressive Web App + Offline functionality
-        // To learn more, visit: https://gatsby.dev/offline
-        // `gatsby-plugin-offline`,
     ],
 };

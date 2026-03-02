@@ -44,7 +44,11 @@ export function Footer({ text, socialMedia }: TFooter) {
                     <ul className={styles.socialMediaList}>
                         {socialMedia.map((social, index) => (
                             <li key={index}>
-                                <a href={social.link} target="_blank">
+                                <a
+                                    href={social.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     {social.icon ? (
                                         <i
                                             className={`fab ${social.icon} fa-3x`}

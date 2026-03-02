@@ -13,7 +13,7 @@ export function PhotosToDigital() {
                 </div>
                 <div>
                     <p>
-                        Bring your old 35mm slides back to life with our 35mm
+                        Bring your old 35mm slides back to life with our 35mm
                         slide scanning service. 35mm slides were popular in
                         times gone past because of their high quality images,
                         but how many people are able to look at their slides on

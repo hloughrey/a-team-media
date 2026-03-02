@@ -11,7 +11,9 @@ export function Header({ menu }: THeader) {
             <div className="visible-xs visible-sm visible-md hidden-lg">
                 <nav
                     className={`navbar navbar-fixed-top ${styles.navbarCustom}`}
-                    onClick={() => setMenuClick(prevState => !prevState)}
+                    onClick={() =>
+                        setMenuClick(previousState => !previousState)
+                    }
                 >
                     <div className={`row ${styles.headerItems}`}>
                         <div className="col-xs-12">

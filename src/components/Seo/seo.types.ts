@@ -1,6 +1,5 @@
 export type TSeo = {
-    description: string;
-    lang: string;
-    meta: string;
+    description?: string;
+    lang?: string;
     title: string;
 };

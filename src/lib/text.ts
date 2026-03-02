@@ -25,8 +25,7 @@ export const text = {
             icon: 'fa-facebook-square',
         },
         {
-            link:
-                'https://www.prsformusic.com/press/2016/prs-for-music-launches-new-member-anti-piracy-system-maps-to-combat-online-music-piracy',
+            link: 'https://www.prsformusic.com/press/2016/prs-for-music-launches-new-member-anti-piracy-system-maps-to-combat-online-music-piracy',
             icon: '',
             image: `${credentials.cloudinary}/v1533585674/a-team-media/licence.png`,
         },
@@ -84,38 +83,31 @@ export const text = {
     FAQ: [
         {
             question: 'What formats can you manage?',
-            answer:
-                '<ul style="font-size: 18px;"><li>VHS</li><li>VHS-C</li><li>Video 8</li><li>Hi8</li><li>MiniDV</li><li>Digital 8</li></ul>',
+            answer: '<ul style="font-size: 18px;"><li>VHS</li><li>VHS-C</li><li>Video 8</li><li>Hi8</li><li>MiniDV</li><li>Digital 8</li></ul>',
         },
         {
             question: 'How long will this service take?',
-            answer:
-                '<p>This service will take up to 7-14 working days depending on the amount of tapes supplied and project type.</p>',
+            answer: '<p>This service will take up to 7-14 working days depending on the amount of tapes supplied and project type.</p>',
         },
         {
             question: 'Can the footage be any length?',
-            answer:
-                '<p>DVD is restricted to around 3 hours of converted tape footage.</p>',
+            answer: '<p>DVD is restricted to around 3 hours of converted tape footage.</p>',
         },
         {
             question: 'Can you order more than one copy?',
-            answer:
-                '<p>Yes you can but you only have a 3 month window to do this but we can copy your DVD for you if required after that 3 months.</p>',
+            answer: '<p>Yes you can but you only have a 3 month window to do this but we can copy your DVD for you if required after that 3 months.</p>',
         },
         {
             question: 'Will my order be safe?',
-            answer:
-                '<p>Yes of course, all tapes are checked and if there are rips and damaged parts this will be relayed to you ASAP.</p>',
+            answer: '<p>Yes of course, all tapes are checked and if there are rips and damaged parts this will be relayed to you ASAP.</p>',
         },
         {
             question: 'I have lots of VHS will this be expensive?',
-            answer:
-                '<p>You may have lots of tapes but not lots of footage, remember we don’t charge per tape, if we can get more than one tape on a disc we will split with chapters and a menu for free.</p>',
+            answer: '<p>You may have lots of tapes but not lots of footage, remember we don’t charge per tape, if we can get more than one tape on a disc we will split with chapters and a menu for free.</p>',
         },
         {
             question: 'What if my VHS is damaged?',
-            answer:
-                '<p>We offer you a repair service, if we cannot fix it, you do not pay anything.</p>',
+            answer: '<p>We offer you a repair service, if we cannot fix it, you do not pay anything.</p>',
         },
     ],
 };
