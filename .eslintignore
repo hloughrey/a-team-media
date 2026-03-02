@@ -4,3 +4,8 @@ node_modules
 dist
 # don't lint nyc coverage output
 coverage
+# don't lint Next.js generated files
+next-env.d.ts
+.next
+out
+public

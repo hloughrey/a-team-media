@@ -27,12 +27,20 @@ $container-padding: 30px 0;
     box-sizing: border-box;
     position: relative;
     width: 100%;
-    padding: 2em 1.5em 4em;
+    padding: 1.5em 1em 3em;
+
+    @media (min-width: $screen-sm-min) {
+        padding: 2em 1.5em 4em;
+    }
 
     .heading {
-        padding: 2em 1.5em;
+        padding: 1.5em 1em;
         text-align: center;
         color: $color-dark-red;
+
+        @media (min-width: $screen-sm-min) {
+            padding: 2em 1.5em;
+        }
     }
 }
 

@@ -9,12 +9,13 @@ import {
     ContactUs,
     Layout,
     Seo,
-} from '../components';
+} from '../src/components';
 
 export default function HomePage() {
     return (
-        <Layout>
-            <div className="row">
+        <>
+            <Seo title="A-Team Media" />
+            <Layout>
                 <Hero />
                 <About />
                 <Weddings />
@@ -22,9 +23,7 @@ export default function HomePage() {
                 <VhsToDigital />
                 <PhotosToDigital />
                 <ContactUs />
-            </div>
-        </Layout>
+            </Layout>
+        </>
     );
 }
-
-export const Head = () => <Seo title="A-Team Media" />;

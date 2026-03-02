@@ -1,47 +1,42 @@
 import React from 'react';
 
 import { TFooter } from './footer.types';
-import styles from './styles.module.scss';
 
 export function Footer({ text, socialMedia }: TFooter) {
     return (
         <footer className="container">
             <div className="row">
-                <div className={`col-xs-6 ${styles.contactDetails}`}>
+                <div className="col-xs-6 contactDetails">
                     <ul>
                         <li>
                             <i
-                                className={`fa fa-map-marker fa-2x ${styles.icon}`}
+                                className="fa fa-map-marker fa-2x icon"
                                 aria-hidden="true"
                             ></i>
-                            <div className={styles.details}>
-                                <span className={`${styles.company}`}>
-                                    {text.AVE}
-                                </span>
+                            <div className="details">
+                                <span className="company">{text.AVE}</span>
                                 <br />
                                 {text.Address}
                             </div>
                         </li>
                         <li>
                             <i
-                                className={`fa fa-phone fa-2x ${styles.icon}`}
+                                className="fa fa-phone fa-2x icon"
                                 aria-hidden="true"
                             ></i>
-                            <div className={styles.details}>
-                                {text.PhoneNumber}
-                            </div>
+                            <div className="details">{text.PhoneNumber}</div>
                         </li>
                         <li>
                             <i
-                                className={`fa fa-envelope fa-2x ${styles.icon}`}
+                                className="fa fa-envelope fa-2x icon"
                                 aria-hidden="true"
                             ></i>
-                            <div className={styles.details}>{text.Email}</div>
+                            <div className="details">{text.Email}</div>
                         </li>
                     </ul>
                 </div>
-                <div className={`col-xs-6 ${styles.footerSocialMedia}`}>
-                    <ul className={styles.socialMediaList}>
+                <div className="col-xs-6 footerSocialMedia">
+                    <ul className="socialMediaList">
                         {socialMedia.map((social, index) => (
                             <li key={index}>
                                 <a
@@ -56,7 +51,7 @@ export function Footer({ text, socialMedia }: TFooter) {
                                         ></i>
                                     ) : (
                                         <img
-                                            className={styles.image}
+                                            className="image"
                                             src={social.image}
                                         />
                                     )}
@@ -67,7 +62,7 @@ export function Footer({ text, socialMedia }: TFooter) {
                 </div>
             </div>
             <div>
-                <p className={styles.copyright}>{text.Copyright}</p>
+                <p className="copyright">{text.Copyright}</p>
             </div>
         </footer>
     );

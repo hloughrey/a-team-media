@@ -9,7 +9,7 @@ export function Hero() {
             <div className={styles.image}>
                 <img
                     className={styles.mainLogo}
-                    src={`${credentials.cloudinary}/c_scale,w_350/v1674423694/a-team-media/a-team-media-logo.png`}
+                    src={`${credentials.cloudinary}/c_scale,w_auto,dpr_auto,f_auto,q_auto/v1674423694/a-team-media/a-team-media-logo.png`}
                     alt="Main Logo"
                 />
             </div>

@@ -33,18 +33,19 @@
 
 .headerItem {
     color: $color-main-text;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
-    
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 16px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        font-size: 14px;
+    }
+
     &:hover, &:active, &:focus {
         border: none;
         background-color: transparent;
-    }
-}
-
-@media only screen and (min-width: $screen-lg-min) {
-
-    .headerItem {
-        font-size: 14px;
     }
 }

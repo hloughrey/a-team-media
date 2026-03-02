@@ -16,7 +16,7 @@ export function NotFound() {
                 <button
                     type="button"
                     className={`btn btn-primary btn-block btn-lg ${styles.submitButton}`}
-                    onClick={() => window.location.href('/')}
+                    onClick={() => (window.location.href = '/')}
                 >
                     Go to Home Page
                 </button>

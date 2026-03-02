@@ -82,3 +82,23 @@ footer {
         margin-bottom: 0;
     }
 }
+
+@media (max-width: $screen-sm-max) {
+    footer {
+        .contactDetails {
+            justify-content: center;
+
+            ul {
+                font-size: 13px;
+
+                li {
+                    margin: 10px;
+                }
+            }
+        }
+
+        .footerSocialMedia .socialMediaList {
+            flex-wrap: wrap;
+        }
+    }
+}
