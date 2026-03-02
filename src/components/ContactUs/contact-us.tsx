@@ -12,7 +12,7 @@ export function ContactUs() {
                     <Heading heading="Get In Touch With Us" />
                 </div>
                 <div className="row">
-                    <div className="col-xs-offset-3 col-xs-12 col-xs-offset-3">
+                    <div className="col-xs-12 col-md-6 col-md-offset-3">
                         <p>
                             If you have any queries please get in touch{' '}
                             <a href="tel:07789 620335">07789 620335</a>

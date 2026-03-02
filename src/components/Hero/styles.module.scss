@@ -10,8 +10,16 @@
 }
 
 .image {
-    padding-bottom: 15em;
+    padding-bottom: 2em;
     align-self: center;
+
+    @media (min-width: $screen-md-min) {
+        padding-bottom: 5em;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        padding-bottom: 8em;
+    }
 }
 
 .scroll {
@@ -20,117 +28,46 @@
     align-self: center;
 
     p {
-        color: rgba(255,255,255,0.6);
         color: $color-dark-red;
         letter-spacing: .2em;
-        font-size: 50px;
+        font-size: 16px;
         padding-bottom: 2em;
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 20px;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            font-size: 30px;
+        }
     }
 
     svg {
         color: $color-dark-red;
         margin-top: 2em;
         animation: bounce 1s infinite alternate;
-        -webkit-animation: bounce 1s infinite alternate;
     }
 
     @keyframes bounce {
-      from {
-        transform: translateY(0px);
-      }
-      to {
-        transform: translateY(-15px);
-      }
-    }
-    @-webkit-keyframes bounce {
-      from {
-        transform: translateY(0px);
-      }
-      to {
-        transform: translateY(-15px);
-      }
-    }
-}
-
-@media only screen and (min-width: $screen-sm-min) {
-
-	.scroll {
-
-		p {
-			font-size: 30px;
-		}
-	}
-
-	@keyframes bounce {
-		from {
-				transform: translateY(0px) scale(2);
-		}
-		to {
-				transform: translateY(-15px) scale(2);
-		}
-	}
-	@-webkit-keyframes bounce {
-		from {
-				transform: translateY(0px) scale(2);
-		}
-		to {
-				transform: translateY(-15px) scale(2);
-		}
-	}
-
-	@media only screen and (orientation:landscape) {
-
-		.scroll {
-
-			p {
-				font-size: 16px;
-				padding-bottom: .5em;
-			}
-		}
-
-		@keyframes bounce {
-			from {
-				  transform: translateY(0px) scale(1);
-			}
-			to {
-				 transform: translateY(-15px) scale(1);
-			}
-		}
-		@-webkit-keyframes bounce {
-			from {
-				  transform: translateY(0px) scale(1);
-			}
-			to {
-				  transform: translateY(-15px) scale(1);
-			}
-		}
-	}
-
-}
-
-@media only screen and (min-width: $screen-lg-min) {
-
-    .scroll {
-
-        p {
-            font-size: 20px;
+        from {
+            transform: translateY(0px);
         }
+        to {
+            transform: translateY(-15px);
+        }
+    }
+}
 
-        @keyframes bounce {
-            from {
-              transform: translateY(0px) scale(1.5);
-            }
-            to {
-              transform: translateY(-15px) scale(1.5);
-            }
-          }
-          @-webkit-keyframes bounce {
-            from {
-              transform: translateY(0px) scale(1.5);
-            }
-            to {
-              transform: translateY(-15px) scale(1.5);
-            }
-          }
+.mainLogo {
+    max-width: 250px;
+    width: 90%;
+    height: auto;
+
+    @media (min-width: $screen-sm-min) {
+        max-width: 300px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        max-width: 350px;
     }
 }

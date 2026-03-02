@@ -16,15 +16,13 @@ export default function HomePage() {
         <>
             <Seo title="A-Team Media" />
             <Layout>
-                <div className="row">
-                    <Hero />
-                    <About />
-                    <Weddings />
-                    <SchoolsGroups />
-                    <VhsToDigital />
-                    <PhotosToDigital />
-                    <ContactUs />
-                </div>
+                <Hero />
+                <About />
+                <Weddings />
+                <SchoolsGroups />
+                <VhsToDigital />
+                <PhotosToDigital />
+                <ContactUs />
             </Layout>
         </>
     );
