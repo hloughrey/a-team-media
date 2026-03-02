@@ -7,11 +7,11 @@ export function NotFound() {
             <div className={`col-xs-12 ${styles.wrapper}`}>
                 <p className={styles.title}>404</p>
                 <p className={styles.subTitle}>
-                    Opps, Sorry we can't find that page
+                    Opps, Sorry we can&apos;t find that page
                 </p>
                 <p className={styles.subTitle}>
                     Either something when wrong or the page{' '}
-                    <br className="hidden-md"></br>doesn't exist any longer
+                    <br className="hidden-md"></br>doesn&apos;t exist any longer
                 </p>
                 <button
                     type="button"

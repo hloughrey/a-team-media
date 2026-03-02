@@ -21,6 +21,13 @@ export default function HTML(props) {
                     dangerouslySetInnerHTML={{ __html: props.body }}
                 />
                 {props.postBodyComponents}
+                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                    <input type="text" name="name" />
+                    <input type="email" name="email" />
+                    <input type="tel" name="telephone" />
+                    <input type="text" name="subject" />
+                    <textarea name="message"></textarea>
+                </form>
             </body>
             <script
                 src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -33,10 +40,16 @@ export default function HTML(props) {
                 integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
                 crossorigin="anonymous"
             ></link>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script
+                src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"
+            ></script>
             <script
                 defer
                 src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+                integrity="sha384-0AJY8UERsBUKdWcyF3o2kisLKeIo6G4Tbd8Y6fbyw6qYmn4WBuqcvxokp8m2UzSD"
+                crossorigin="anonymous"
             ></script>
         </html>
     );
