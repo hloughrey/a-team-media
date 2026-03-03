@@ -1,18 +1,18 @@
 import React from 'react';
+import { Video } from 'lucide-react';
 
 import { Heading } from '../../components';
-import styles from './styles.module.scss';
 
 export function VhsToDigital() {
     return (
-        <section id="video-tape-conversions" className={styles.section}>
-            <div className="container">
-                <div className={styles.heading}>
-                    <i className="fa fa-video fa-5x" aria-hidden="true" />
+        <section id="video-tape-conversions" className="section bg-pinewood">
+            <div className="mx-auto max-w-5xl px-4">
+                <div className="section-heading">
+                    <Video size={60} className="mx-auto mb-2" />
                     <Heading heading="Video to Digital" />
                 </div>
-                <div className={styles.toDigitalWrapper}>
-                    <div className={styles.toDigitalIntro}>
+                <div>
+                    <div className="my-4">
                         <p>
                             Looking to retain all your family history & memories
                             from your old VHS and camcorder tapes?
@@ -40,25 +40,26 @@ export function VhsToDigital() {
                             available on request.
                         </p>
                     </div>
-                    <div className="row">
-                        <div
-                            className={`col-sm-offset-3 col-xs-12 col-sm-6 col-sm-offset-3 ${styles.packageListings} ${styles.featureListing}`}
-                        >
-                            <h2>MP4 Files</h2>
-                            <div className={styles.packageInfo}>
-                                <ul>
-                                    <li>Tape converted to MP4 - £15</li>
-                                    <li>Supplied on a USB - £10**</li>
-                                    <li>
-                                        Digital link supplied for download - £10
-                                    </li>
-                                </ul>
-                            </div>
+                    <div className="flex flex-wrap justify-center">
+                        <div className="w-full sm:w-1/2 text-center my-4">
+                            <h2 className="mt-0 mb-0 py-4 border border-light-red bg-[#ef9a9a]">
+                                MP4 Files
+                            </h2>
+                            <ul className="list-none p-0 m-0">
+                                <li className="text-base py-3 px-3 border border-light-pink odd:bg-off-white even:bg-medium-pink">
+                                    Tape converted to MP4 - £15
+                                </li>
+                                <li className="text-base py-3 px-3 border border-light-pink odd:bg-off-white even:bg-medium-pink">
+                                    Supplied on a USB - £10**
+                                </li>
+                                <li className="text-base py-3 px-3 border border-light-pink odd:bg-off-white even:bg-medium-pink">
+                                    Digital link supplied for download - £10
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
                     <div>
-                        <ul className={styles.subPoints}>
+                        <ul className="list-none pl-0">
                             <li>
                                 *These prices is on top of the conversion price,
                                 so 10 files on one USB would be £160 total.

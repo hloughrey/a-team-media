@@ -1,42 +1,42 @@
 import React from 'react';
+import { BookOpen } from 'lucide-react';
 
 import { Heading } from '../../components';
 import { credentials } from '../../lib';
-import styles from './styles.module.scss';
 
 export function About() {
     return (
-        <section id="about" className={styles.section}>
-            <div className="container">
-                <div className={styles.heading}>
-                    <i className="fa fa-book fa-5x" aria-hidden="true" />
+        <section id="about" className="section bg-white">
+            <div className="mx-auto max-w-5xl px-4">
+                <div className="section-heading">
+                    <BookOpen size={60} className="mx-auto mb-2" />
                     <Heading heading="About" />
                 </div>
-                <div className="row">
-                    <div className="col-xs-12 col-md-6">
+                <div className="flex flex-wrap -mx-2">
+                    <div className="w-full md:w-1/2 px-2">
                         <img
-                            className={styles.img}
+                            className="w-full shadow-[2px_4px_5px_#888888] rounded"
                             src={`${credentials.cloudinary}/v1533585548/a-team-media/aboutUs.jpg`}
                         />
                     </div>
-                    <div
-                        className={`col-xs-12 col-md-6 ${styles.aboutWrapper}`}
-                    >
+                    <div className="w-full md:w-1/2 px-2 mt-8 md:mt-0">
                         <p>
                             I am an award winning Videographer based in
                             Oldmeldrum, Aberdeenshire Scotland.
                         </p>
                         <p>
                             My business was established in 2013 under the brand
-                            names ‘Aberdeenshire Video Editing’ and ‘AVE Wedding
-                            Films’ and our services remain the same today under
-                            the new name ‘A-Team Media’.
+                            names &apos;Aberdeenshire Video Editing&apos; and
+                            &apos;AVE Wedding Films&apos; and our services
+                            remain the same today under the new name
+                            &apos;A-Team Media&apos;.
                         </p>
                         <p>
                             Why A-Team Media? My family consists of myself
                             (Andy), my wife Arlene, and my twin children Aidan
-                            and Addison, so all A’s and hence the A-Team, it
-                            makes total sense to me, a fan of 80’s TV shows.
+                            and Addison, so all A&apos;s and hence the A-Team,
+                            it makes total sense to me, a fan of 80&apos;s TV
+                            shows.
                         </p>
                         <p>
                             My family and I love all things Disney and lots of

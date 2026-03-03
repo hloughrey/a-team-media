@@ -22,7 +22,7 @@ export const text = {
     SocialMedia: [
         {
             link: 'https://www.facebook.com/ateammediauk/',
-            icon: 'fa-facebook-square',
+            icon: 'facebook',
         },
         {
             link: 'https://www.prsformusic.com/press/2016/prs-for-music-launches-new-member-anti-piracy-system-maps-to-combat-online-music-piracy',

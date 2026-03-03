@@ -8,16 +8,8 @@ export function Layout({ children }: PropsWithChildren<unknown>) {
     return (
         <div>
             <Header menu={text.Menu} />
-            <div className="mainContainer">
-                <div className="container-fluid">
-                    <div className="row mainRow">
-                        <div className="mainWrapper">
-                            <main>{children}</main>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="footerWrapper">
+            <main className="pt-[60px]">{children}</main>
+            <div className="p-4 relative w-full">
                 <Footer text={text.General} socialMedia={text.SocialMedia} />
             </div>
         </div>

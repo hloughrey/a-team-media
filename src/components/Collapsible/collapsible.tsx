@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-import styles from './styles.module.scss';
+import { ChevronUp, ChevronDown } from 'lucide-react';
 
 interface CollapsibleProperties {
     isOpen?: boolean;
@@ -15,22 +14,16 @@ export const Collapsible: React.FC<CollapsibleProperties> = ({
 }) => {
     const [open, setOpen] = useState(isOpen);
 
-    const handleCollapse = () => {
-        setOpen(previous => !previous);
-    };
-
     return (
-        <div className={styles.collapsible}>
-            <div onClick={handleCollapse} className={styles.heading}>
+        <div className="flex flex-col">
+            <div
+                onClick={() => setOpen(previous => !previous)}
+                className="flex-1 bg-off-white py-3 px-3 text-2xl border-b-2 border-white cursor-pointer flex justify-between items-center"
+            >
                 <span>{heading}</span>
-                <i
-                    className={`fa fa-chevron-${open ? 'up' : 'down'} ${styles.chevron}`}
-                    aria-hidden="true"
-                ></i>
+                {open ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
             </div>
-            <div className={open ? styles.visible : styles.collapsed}>
-                {children}
-            </div>
+            <div className={open ? 'block p-3' : 'hidden'}>{children}</div>
         </div>
     );
 };

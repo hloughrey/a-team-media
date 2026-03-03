@@ -1,13 +1,12 @@
 import React, { Fragment } from 'react';
 
 import { THeading } from './heading.types';
-import styles from './styles.module.scss';
 
 export function Heading({ heading }: THeading) {
     return (
         <Fragment>
-            <h1 className={styles.heading}>{heading}</h1>
-            <span className={styles.underline}></span>
+            <h1 className="text-center uppercase">{heading}</h1>
+            <span className="block w-[60px] mx-auto my-8 border-b-4 border-solid"></span>
         </Fragment>
     );
 }

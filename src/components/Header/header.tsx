@@ -1,60 +1,27 @@
 import React, { useState } from 'react';
 
 import { THeader } from './header.types';
-import styles from './styles.module.scss';
 
 export function Header({ menu }: THeader) {
-    const [menuClicked, setMenuClick] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <header>
-            <div className="visible-xs visible-sm visible-md hidden-lg">
-                <nav
-                    className={`navbar navbar-fixed-top ${styles.navbarCustom}`}
-                    onClick={() =>
-                        setMenuClick(previousState => !previousState)
-                    }
+            {/* Mobile / tablet nav (hidden on lg+) */}
+            <nav className="lg:hidden fixed top-0 left-0 w-full z-50 bg-white flex items-center justify-center">
+                <div
+                    className="w-full text-center cursor-pointer"
+                    onClick={() => setMenuOpen(previous => !previous)}
                 >
-                    <div className={`row ${styles.headerItems}`}>
-                        <div className="col-xs-12">
-                            <span className={styles.headerItem}>Menu</span>
-                        </div>
-                        <div className="col-xs-12">
-                            {menuClicked && (
-                                <ul className={styles.navItemsMobile}>
-                                    {menu.map((item, index) => (
-                                        <li key={index} className="nav-item">
-                                            <a
-                                                className={styles.headerItem}
-                                                href={
-                                                    item.hash
-                                                        ? `#${item.hash}`
-                                                        : '/'
-                                                }
-                                            >
-                                                {item.route}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                        </div>
-                    </div>
-                </nav>
-            </div>
-
-            <div className="hidden-xs hidden-sm hidden-md visible-lg">
-                <nav
-                    className={`navbar navbar-fixed-top ${styles.navbarCustom}`}
-                >
-                    <div className="col-xs-12">
-                        <ul
-                            className={`nav nav-pills nav-justified ${styles.noMarginTop}`}
-                        >
+                    <span className="block py-4 text-main-text text-lg font-semibold">
+                        Menu
+                    </span>
+                    {menuOpen && (
+                        <ul className="list-none pl-0 pb-2">
                             {menu.map((item, index) => (
-                                <li key={index} className="nav-item">
+                                <li key={index} className="py-3">
                                     <a
-                                        className={styles.headerItem}
+                                        className="text-main-text text-lg font-semibold no-underline"
                                         href={item.hash ? `#${item.hash}` : '/'}
                                     >
                                         {item.route}
@@ -62,9 +29,25 @@ export function Header({ menu }: THeader) {
                                 </li>
                             ))}
                         </ul>
-                    </div>
-                </nav>
-            </div>
+                    )}
+                </div>
+            </nav>
+
+            {/* Desktop nav (lg+) */}
+            <nav className="hidden lg:flex fixed top-0 left-0 w-full z-50 bg-white items-center justify-center">
+                <ul className="flex w-full list-none pl-0 my-0">
+                    {menu.map((item, index) => (
+                        <li key={index} className="flex-1 text-center">
+                            <a
+                                className="block py-3 text-main-text text-sm font-semibold no-underline hover:bg-transparent focus:bg-transparent"
+                                href={item.hash ? `#${item.hash}` : '/'}
+                            >
+                                {item.route}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
         </header>
     );
 }

@@ -1,41 +1,37 @@
 import React from 'react';
+import { GraduationCap } from 'lucide-react';
 
 import { credentials } from '../../lib/credentials';
 import { Heading } from '../../components';
-import styles from './styles.module.scss';
 
 export function SchoolsGroups() {
     return (
-        <section id="schools-groups" className={styles.section}>
-            <div className="container">
-                <div className={styles.heading}>
-                    <i
-                        className="fa fa-graduation-cap fa-5x"
-                        aria-hidden="true"
-                    />
+        <section id="schools-groups" className="section bg-white">
+            <div className="mx-auto max-w-5xl px-4">
+                <div className="section-heading">
+                    <GraduationCap size={60} className="mx-auto mb-2" />
                     <Heading heading="Schools & Groups" />
                 </div>
-                <div className="row">
-                    <div className="col-xs-12 col-md-6">
+                <div className="flex flex-wrap -mx-2">
+                    <div className="w-full md:w-1/2 px-2">
                         <img
-                            className={styles.img}
+                            className="w-full shadow-[2px_4px_5px_#888888] rounded"
                             src={`${credentials.cloudinary}/v1533585752/a-team-media/schools.jpg`}
                         />
                     </div>
-                    <div
-                        className={`col-xs-12 col-md-6 ${styles.aboutWrapper}`}
-                    >
+                    <div className="w-full md:w-1/2 px-2 mt-8 md:mt-0">
                         <p>
                             Are you a school or group* that is having a show or
                             performance?
                         </p>
                         <p>
-                            Concerned that it’s too expensive to be
+                            Concerned that it&apos;s too expensive to be
                             professionally filmed?
                         </p>
                         <p>
-                            Thinking of using a nominated parent with a ‘decent’
-                            camcorder or iPad to film the show?
+                            Thinking of using a nominated parent with a
+                            &apos;decent&apos; camcorder or iPad to film the
+                            show?
                         </p>
                         <p>
                             We offer a fantastic professional service for

@@ -1,14 +1,14 @@
 import React from 'react';
+import { Camera } from 'lucide-react';
 
 import { Heading } from '../../components';
-import styles from './styles.module.scss';
 
 export function PhotosToDigital() {
     return (
-        <section id="photo-slide-conversions" className={styles.section}>
-            <div className="container">
-                <div className={styles.heading}>
-                    <i className="fa fa-camera fa-5x" aria-hidden="true"></i>
+        <section id="photo-slide-conversions" className="section bg-white">
+            <div className="mx-auto max-w-5xl px-4">
+                <div className="section-heading">
+                    <Camera size={60} className="mx-auto mb-2" />
                     <Heading heading="Photos to Digital" />
                 </div>
                 <div>

@@ -1,6 +1,0 @@
-@use '../../styles' as *;
-
-.section {
-	@include section;
-	background-color: $color-white;
-}
