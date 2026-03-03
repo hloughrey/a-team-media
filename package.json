@@ -10,7 +10,6 @@
     "serve": "npx serve@latest out",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint:formatting": "prettier --check '**/*.ts?(x)'",
-    "lint:css": "stylelint \"**/*.styled.ts\"",
     "lint": "eslint \"src/**/*.ts?(x)\" --quiet",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "prepare": "husky"
@@ -24,20 +23,20 @@
     "tailwindcss": "4.2.1"
   },
   "devDependencies": {
+    "@eslint/js": "9.39.3",
+    "@types/node": "25.3.3",
     "@types/react": "19.2.14",
     "@typescript-eslint/eslint-plugin": "8.56.1",
     "@typescript-eslint/parser": "8.56.1",
-    "eslint": "8.57.1",
+    "eslint": "9.39.3",
     "eslint-config-prettier": "9.1.2",
     "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-unicorn": "51.0.1",
+    "eslint-plugin-unicorn": "63.0.0",
     "husky": "9.1.7",
     "lint-staged": "15.5.2",
     "prettier": "3.8.1",
-    "stylelint": "16.26.1",
-    "stylelint-config-rational-order": "0.0.4",
-    "stylelint-config-recommended": "14.0.1",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.56.1"
   },
   "lint-staged": {
     "*.ts?(x)": [

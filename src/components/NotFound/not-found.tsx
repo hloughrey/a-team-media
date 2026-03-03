@@ -16,7 +16,7 @@ export function NotFound() {
                 <button
                     type="button"
                     className="w-full bg-dark-red border-dark-red text-white py-3 px-6 text-lg cursor-pointer"
-                    onClick={() => (window.location.href = '/')}
+                    onClick={() => (globalThis.location.href = '/')}
                 >
                     Go to Home Page
                 </button>
