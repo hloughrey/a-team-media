@@ -16,15 +16,15 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "next": "15.3.1",
+    "next": "15.5.12",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "sass": "1.97.3"
   },
   "devDependencies": {
     "@types/react": "19.2.14",
-    "@typescript-eslint/eslint-plugin": "6.21.0",
-    "@typescript-eslint/parser": "6.21.0",
+    "@typescript-eslint/eslint-plugin": "8.56.1",
+    "@typescript-eslint/parser": "8.56.1",
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.2",
     "eslint-plugin-react": "7.37.5",
@@ -33,7 +33,7 @@
     "lint-staged": "15.5.2",
     "prettier": "3.8.1",
     "stylelint": "16.26.1",
-    "stylelint-config-rational-order": "0.1.2",
+    "stylelint-config-rational-order": "0.0.4",
     "stylelint-config-recommended": "14.0.1",
     "typescript": "5.9.3"
   },
